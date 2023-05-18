@@ -4,18 +4,50 @@
     <meta charset="utf-8">
     <title>Concrete Manifesto</title> 
     <!--
-        Use this page to complete the "Concrete Manifesto" exercise:
-        https://canvas.umw.edu/courses/1446087/assignments/10969836
+      This is my interpretaton of the Concrete Manifestio exercise:
+
+      My manifestio statement is by Arts Emergency:
+      "There is no recession of the imagination"
+      https://designmanifestos.org/arts-emergency-the-arts-emergency-manifesto/
     -->  
 
     <style type="text/css">
+        p{
+            font-size:4;
+        }
+        #grow:hover{
+            cursor:pointer;
+        }
 
     </style>
 </head>
 <body>
 
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+
+    <p>There is <span style="text-decoration: underline;">no</span> recession of the imagination.</p>
+
+<script type="text/javascript">==$0
+let g = document.getElementById("grow");
+
+// set the font-size property in JavaScript
+g.style.fontSize = "100%";
+
+// add a function to the onclick event
+g.onclick = function(){
+
+     // determine current font size and convert it to an integer
+     let fs = Number(this.style.fontSize.replace("%",""));
+
+     // make sure it worked
+     console.log(fs);
+
+     // change the color of the clicked element 
+     this.style.color = "red";
+
+     // change the font size to increase it by 10%
+     this.style.fontSize = fs * 1.1 + "%";
+};
+</script>
 
 </body>
 </html> 
