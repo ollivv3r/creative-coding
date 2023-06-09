@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
-    
+
     <!-- RiTa library: -->
     <script src="https://unpkg.com/rita@2.8.31/dist/rita.js"></script>
 
@@ -14,23 +13,952 @@
         https://canvas.umw.edu/courses/1446087/assignments/10970272
     -->  
 
-    <style type="text/css">
+<style type="text/css">
         body {
             background-color:#334433;
         }
         main {
             width: 100%;
+            display:none;
+        }
+        #source {
+            display:none;
         }
         canvas {
-            display:block;
+            display: none;
             margin: 0 auto;
         }
-    </style>
+
+        #letter{
+            background-color: #eee;
+            width: 600px;
+            padding: 2em;
+            margin: 3em;
+        }
+
+</style>
 
 </head>
 <body>
-    <main>
-    </main>
+
+        <div id="letter">
+
+        </div>
+  
+        <div id="source">
+
+
+
+<!-- Bird Day; How to prepare for it by Charles Almanzo Babcock (https://www.gutenberg.org/cache/epub/21266/pg21266-images.html) -->
+
+PART I
+BIRD DAY. HOW TO PREPARE FOR IT
+[9]
+
+BIRD DAY
+HOW TO PREPARE FOR IT
+I
+HISTORY OF THE MOVEMENT FOR "BIRD DAY"
+In the spring of 1894 the writer's attention was attracted to the interest of the children in that part of their nature study which related to birds. Their descriptions of the appearance and habits of the birds they had observed were given with evident pleasure. They had a strong desire to tell what they had seen, not in the spirit of rivalry, but with the wish of adding to the knowledge of a subject in which all were equally interested.
+
+It was thought that this work would be done with even more effectiveness if a day were appointed to be celebrated as "Bird Day." With the hope of making a memorable occasion of the day for those taking part in it, several of the noted friends of birds were asked to write something to the children, and to give their opinion of the introduction of "Bird Day" into the schools.
+
+Secretary J. Sterling Morton, the father of "Arbor Day," responded with the following earnest letter, which was at once given to the public through Washington dispatches, and later was sent out from the Department of Agriculture, in circular No. 17:—
+
+Washington, D. C., April 23, 1894.
+
+Mr. C. A. Babcock, Superintendent of Schools, Oil City, Pa.
+
+Dear Sir,—Your proposition to establish a "Bird Day" on the same general plan as "Arbor Day," has my cordial approval.[10]
+
+Such a movement can hardly fail to promote the development of a healthy public sentiment toward our native birds, favoring their preservation and increase. If directed toward this end, and not to the encouragement of the importation of foreign species, it is sure to meet the approval of the American people.
+
+It is a melancholy fact that among the enemies of our birds two of the most destructive and relentless are our women and our boys. The love of feather ornamentation so heartlessly persisted in by thousands of women, and the mania for collecting eggs and killing birds so deeply rooted in our boys, are legacies of barbarism inherited from our savage ancestry. The number of beautiful and useful birds annually slaughtered for bonnet trimmings runs up into the hundreds of thousands, and threatens, if it has not already accomplished, the extermination of some of the rarer species. The insidious egg-hunting and pea-shooting proclivities of the small boy are hardly less widespread and destructive. It matters little which of the two agencies is the more fatal, since neither is productive of any good. One looks to the gratification of a shallow vanity, the other to the gratification of a cruel instinct and an expenditure of boyish energy that might be profitably diverted into other channels. The evil is one against which legislation can be only palliative and of local efficiency. Public sentiment, on the other hand, if properly fostered in the schools, would gain force with the growth and development of our boys and girls, and would become a hundredfold more potent than any law enacted by the State or Congress. I believe such a sentiment can be developed, so strong and so universal that a respectable woman will be ashamed to be seen with the wing of a wild bird on her bonnet, and an honest boy will be ashamed to own that he ever robbed a nest or wantonly took the life of a bird.
+
+Birds are of inestimable value to mankind. Without their unremitting services our gardens and fields would be laid waste by insect pests. But we owe them a greater debt even than this, for the study of birds tends to develop some of the best attributes and impulses of our natures. Among them we find examples of generosity, unselfish devotion, of the love of mother for offspring, and other estimable qualities. Their industry, patience, and ingenuity excite our admiration; their songs inspire us with a love of music and poetry; their beautiful plumages and graceful manners appeal to our æsthetic sense; their long migrations to distant lands stimulate our imaginations and tempt us to inquire into the causes of these periodic movements; and finally, the endless modifications of form and habits by which they are enabled to live under most diverse conditions of food and climate—on land and at sea—invite the student of nature into inexhaustible fields of pleasurable research.
+
+The cause of bird protection is one that appeals to the best side of our natures. Let us yield to the appeal. Let us have a Bird Day—a day set apart from all the[11] other days of the year to tell the children about the birds. But we must not stop here. We should strive continually to develop and intensify the sentiment of bird protection, not alone for the sake of preserving the birds, but also for the sake of replacing as far as possible the barbaric impulses inherent in child nature by the nobler impulses and aspirations that should characterize advanced civilization.
+
+Respectfully,
+
+J. Sterling Morton,
+
+Secretary of Agriculture.
+
+Other friends of the birds responded cordially to the request, as will be seen by the following letters:—
+
+West Park, N. Y., April 22, 1894.
+
+Dear Sir,—In response to yours of the seventeenth, I enclose a few notes about birds to be read upon your "Bird Day"—just an item or two to stimulate the curiosity of the young people. The idea is a good one, and I hope you may succeed in starting a movement that may extend to all the schools of the country.
+
+Very truly yours,
+
+John Burroughs.
+
+628 Hancock Street, Brooklyn, N. Y., April 25, 1894.
+
+Mr. C. A. Babcock.
+
+Dear Sir,—Yours of the nineteenth is received. I am delighted to know that your school children are to have a "Bird Day." I wish I could be there to tell them something of the delight of getting acquainted with their little brothers in feathers; how much more interesting they are when alive and doing all sorts of quaint and charming things than when dead and made into "skins" or stuffed; and how much greater is the pleasure of watching them to see how they live, where they get their dinner, how they take care of themselves, than of killing them, or hurting them, or even just driving them away. If the boys and girls only try keeping still and watching birds to see what they will do, I am sure no boy will ever again want to throw a stone at one, and no girl ever to have a dead bird on her hat.
+
+Very truly yours,
+
+Olive Thorne Miller.
+
+Clinton, April 30, 1894.
+
+My Dear Sir,—It strikes me that your idea is a particularly happy one. Should you institute a "Bird Day," the feathered tribe ought to furnish music for the occasion. A chorus of robins and thrushes and a few other songsters would be more appropriate than an orchestra. With thanks for your cordial good wishes, I am,
+
+Yours faithfully,
+
+Clinton Scollard.[12]
+
+From the Department of Public Instruction of Pennsylvania this encouraging letter was received:—
+
+Harrisburg, April 27, 1894.
+
+Superintendent C. A. Babcock.
+
+Dear Sir,—In your plan to inaugurate a "Bird Day" you have struck a capital idea. When in the name of agriculture a scalp act can be passed resulting in a year and a half in the payment of $75,000 by the county treasuries of Pennsylvania for the destruction of birds that were subsequently proved to belong to the feathered friends of the farmer, it is high time to make our pupils acquainted with the habits and ways of the feathered tribes. Some birds remain with us the whole year, others are summer sojourners, still others are only transient visitors. How much of the beauty of our environment is lost by those who never listen to the music of the birds and never see the richness of their plumage!
+
+May success attend you in carrying out your new idea of a "Bird Day."
+
+Very truly yours,
+
+Nathan C. Schaeffer,
+
+Superintendent of Public Instruction.
+
+Bradford Torrey gives an additional title to the day, showing his appreciation of it:—
+
+Wellesley Hills, Mass., April 21, 1894.
+
+Dear Mr. Babcock,—Your young people are to be congratulated. "Bird Day" is something new to me—a new saints' day in my calendar, so to speak. The thought is so pleasing to me that I wish you had given me its date, so that in spirit I might observe it with you. Tell your pupils that to cultivate an acquaintance with things out of doors—flowers, trees, rocks, but especially animate creatures, and best of all, birds—is one of the surest ways of laying up happiness for themselves; and laying up happiness is even better than laying up money, though I am so old-fashioned a body and so true a Yankee as to believe in that also.
+
+All the naturalists I have known have been men of sunny temper. Let your boys and girls cultivate their eyes and ears, and their hearts and minds as well, by the study of living birds, their comings and goings, their songs and their ways; let them learn to find out things for themselves; to know the difference between guess-work and knowledge; and they will thank you as long as they live for having encouraged them in so good a cause. With all good wishes for the success of your first "Bird Day"—and many to come after it,
+
+Very truly yours,
+
+Bradford Torrey.
+
+[13]
+
+The first observance of "Bird Day," May 4, 1894, is briefly set forth in the following paragraph from the New England Journal of Education:—
+
+The day was observed in the Oil City schools with a degree of enthusiasm which was good to see. The amount of information about birds that was collected by the children was simply amazing. Original compositions were read, informal discussions were held, talks by teachers were given, and the birds in literature were not forgotten or overlooked. The interest was not confined to the children, one gentleman surprising the classes in which his children celebrated the day by presenting to them artistic programs of the exercises.
+
+It seems to those interested that the idea simply needs to be made known to meet with a warm welcome, akin to that with which we greet our first robin or song sparrow in the spring.
+
+[14]
+
+II
+THE VALUE OF BIRDS
+Probably few people understand the value of birds or comprehend how closely and yet how extensively their lives are interwoven with other forms of life. The general sentiment in regard to them, at the best, has been that they are harmless, even interesting and beautiful creatures; but the idea that they are one of the most important classes of creation, a class upon which the existence of many other classes depends, has never been widely prevalent. Suppose we were asked which is of more use to man, the fishes of our waters or the birds of our forests and fields? Many of us would unhesitatingly answer in favor of the fishes.
+
+If all of these denizens of the rivers, lakes, and seas should be destroyed, it would be a stupendous calamity. Mankind would universally deplore it; and if the nations of the world should, at any time, become convinced that such a thing might occur, how quickly they would take all possible means to prevent it! All civilized people now have laws to preserve this food supply and are making expensive and laborious efforts to increase it. Any one who should destroy thousands of tons of these edible swimmers, simply for their heads and tails, or fins and scales, would be regarded as a dangerous person. But if our supposition were realized, if every fin and gill were to disappear from the waters of the globe, what would be the result? A misfortune, truly, for the fins represent a large part of the world's supply of food, and this loss would be felt more deeply as time went on, because the ocean will not raise its rent, however crowded may be the population of its shores. The effort to secure the fish might be applied, however, in other directions and be[15] equally remunerative. Harvest would still follow seedtime; the gold of autumn still reward the shallow mines of spring.
+
+But suppose we were forced to the dreadful alternative of choosing between the birds and the quadrupeds, again, the most of us would probably decide against the birds. If the four-footed beasts should disappear from the earth, it would be a much greater disaster than the destruction of the fishes. A much larger fraction of the food supply would be lost; while many of these animals contribute to man's comfort and necessities in almost innumerable ways. Most nations have learned to cherish their friends with hoofs and horns, and even some of those with claws. Cruelty to animals is now generally forbidden by law; and their wanton destruction would be regarded with horror. No one would be permitted to slaughter large numbers of them because he might wish to sell their horns or ears or the tips of their tails.
+
+By the departure of the quadrupeds the life of man would be rendered much more difficult, but would still be possible. From fish and fowl he could obtain a supply of meat limited in variety, yet sufficient for his needs. The treasures of the vegetable world would still be his, though he would miss the help of his animal allies in securing them; but his ingenuity would help him to supply this loss, in part, at least.
+
+Consider now what would be the effect of the total destruction of birds. Birds are nature's check to the amazing power of insects to increase. If insect life were allowed free course, it would soon overpower vegetation; and plant life—and, therefore, animal life, including that of man—would be impossible upon this globe. This is an astounding conclusion, but it is sustained by the judgment of every man of science who has investigated the subject. How long could the ravages of insects be stayed were the birds gone? We should have to depend upon a few predaceous beetles, the bats, and upon the sprayers and squirtguns which throw insecticides. Think of the æsthetic loss in substituting these agencies for the "sweet spirits" of the wood and field! Besides not being musical or charming in action, they[16] would not prove efficient. Birds are therefore essential to the life of man.
+
+Their preservation is not merely a matter of sentiment, or of education in that high and fine feeling, kindness to all living things. It has a utilitarian side of vast extent, as broad as our boundless fields and our orchards' sweep. The birds are nature's guarantee that the reign of the crawlers and spinners shall not become universal. The "plague of locusts" shall be upon those who sin against them.
+
+[17]
+
+III
+THE DESTRUCTION OF BIRDS
+From almost all sections of the country comes the plaint that the song birds are fast disappearing. Less and less numerous are the yearly visitations of the thrushes, warblers, song sparrows, orioles, and the others whose habits have been so delightful and whose music has been so cheering to their open-eyed and open-hearted friends. Many, who when listening to the hymn-like cadences of the wood thrush have felt that the place was holy ground, are now keenly regretting that this vesper song is so rare; the honest sweetness of the song sparrow mingles with the coarser sounds less often in the accustomed places. Not many now find "the meadows spattered all over with music" by the bobolink, as Thoreau did.
+
+John Burroughs says that the bluebird is almost extinct in his section of country. The writer, though a frequent visitor to the fields and woods, has succeeded in seeing only one pair of these beautiful birds in two seasons, where they were abundant a few years ago, when almost every orchard bore a good crop of them. A friend who is a good observer has had the same experience. A careful exploration of the country within a radius of five miles resulted in the discovery of only two pairs of bobolinks, having their nests luckily in the same field. The males sang together in friendly rivalry. The sparkling, tinkling notes seemed to come in a rippling tumble, two or three at a time, from each throat. Each started his song with his feet barely touching his perch, his body quivering, his wings half extended, as if he were almost supported by the upward flow of his melody. After circular flights he alighted first upon one frail, swinging perch, then upon another, the won[18]derful sounds not ceasing, as if he were tracing magic rings of song round his home, and making them thick in places. It was a musical embodiment of the love of life and of its joyousness.
+
+The brown thrush is also absent from places where once there were many. A farmer in this neighborhood states that a few years ago the treetops near his house seemed to be filled with these fine singers. Now he hears only one or two during the season. Last May the writer found three nests at least a mile apart, but they were destroyed before the time of hatching, and the birds went about silent as if brooding upon their trouble. It is doubtful if they will build next season in that vicinity. No doubt the clearing away of the forests and the settling up of the country are responsible for the scarcity of the birds in part, but only in part. If they were let alone, many of the most interesting and useful birds would build near even our city homes, and our gardens and fields would again become populous with them.
+
+The wearing of feathers and the skins of birds for ornament is the chief cause of the final flight of many of our songsters. It is stated that a London dealer received at one time more than thirty thousand dead humming birds. Not only brightly colored birds, but any small birds, by means of dyes, may come at last to such base uses. It is estimated by some of the Audubon societies that ten million birds were used in this country in one season. All these bodies, which are used to make "beauty much more beauteous seem," are steeped in arsenical solutions to prevent their becoming as offensive to the nostrils of their wearers as they are to the eyes of bird lovers.
+
+The use of dead birds for adornment is a constant object lesson in cruelty, a declaration louder than any words that a bird's life is not to be respected. It is currently reported that a million bobolinks were destroyed in Pennsylvania alone last year to satisfy the demand of the milliners. If this "garniture of death" is in good taste, then our North American Indian in his war paint and feathers was far ahead of his time.
+
+Let us hope that some oracle of fashion will decree that if the remains[19] of animals must be used for adornment, the skins of mice and rats shall be offered up. Their office seems to be principally that of scavengers, and their gradual but certain extinction would not matter if the Christian nations should become, pari passu, more cleanly. The squirrel could also be used effectively, mounted as if half flying, with his hind feet fastened to the velvet pedestal, or sitting upon his haunches with a nut between his fore paws. The squirrel's main concern seems to be to prevent the undue extension of the nut-bearing trees—an office man has already well taken upon himself—and besides, he destroys fruit, injures trees, and is a great enemy of birds. His gradual extinction would be tolerated by a civilized nation.
+
+All these things may take the hues of the rainbow and are capable of infinite variety of arrangement. There certainly seems to be no good reason why in a few years some combination of them may not be considered as effective as a row of dead humming birds. The world may be saved in this way from presenting a spectacle that should excite the pity of gods and men—the spectacle of the destruction of one of the most beautiful, the most harmless, and the most useful classes of creation, at the command of the senseless whims of fashion.
+
+Then, too, the sportsmen's guns and the small boys' slings and shooters of various sorts are constantly bringing down numbers of the feathered songsters. In many parts of our country men and boys roam the fields, shooting at every bird they see, and their action is tacitly approved by the community. This survival of the barbarous instinct to kill is condoned as "sport." If these people were to spend this time in following the birds with opera glass and notebook to study them, they might not be so readily understood—they might even be taken for mild lunatics, so utterly is public sentiment perverted on this subject.
+
+A little consideration shows this destruction to be more disastrous than at first appears. According to the latest biological science, every species of animals must have long ago reached the limit beyond which it could not greatly increase its numbers. However great its tendency[20] to increase might be, its natural obstacles and enemies would increase in like proportions till at last the two would balance each other, and there could be no further increase in the number of individuals of that species. All classes of animals in a state of nature must have reached this balanced condition generations ago. This is true of the birds. Their natural enemies are capable of preventing their increase; that is, they can and do destroy every year as many as are hatched that year. Now if man be added as a new destructive agency, the old enemies, being still able to destroy as many as before, will soon sweep them out of existence. Warnings have been sent out by the United States Department of Biology that several species of birds are already close to extinction. We know that this is true of the passenger pigeon. This bird used to come North in flocks so extensive as sometimes to obscure the sun, like a large, thick cloud. Now they come no more. Italy is practically songless, we are told.
+
+If man would right the wrong that he has done, he must not only stop destroying the birds, but he must take all possible means to preserve them and to protect them from their natural foes.
+
+Laws for bird protection have been passed in many of our states; but these have been found effective only where they were not needed. They are, however, right, and will help in the development of correct sentiment. What is most needed is knowledge of the birds themselves, their modes of life, their curious ways, and their relations to the scheme of things. To know a bird is to love him. Birds are beautiful and interesting objects of study, and make appeals to children that are responded to with delight.
+
+Children love intensely the forms of nature—the clouds, the trees, the flowers, the animals—all of the great beautiful world outside of themselves, and it is their impulse to become acquainted with this world; for this they feel enthusiasm and love. Marjorie Fleming, the little playmate of Scott, who at the age of six could recite passages from Shakespeare and Burns so that the great bard would sob like a child or[21] shout with laughter, may be taken as the universal voice of childhood. She writes in her diary, "I am going to a delightful place where there is ducks, cocks, hens, bubblejacks, two dogs, two cats and swine which is delightful." In another place she says, "Braehead is extremely pleasant to me by the company of swine, geese, cocks, etc., and they are the delight of my soul."
+
+The waste of time in our public schools has been commented upon and some of the causes have been pointed out; but is not the chief reason the fact that much of the work of the school is unrelated to the world of the child? At least the child does not see the connection. He leaves at the threshold the things which he loves and desires intensely to investigate, and begins his intellectual development with abstractions, with "the three R's." It is said that teachers cannot succeed unless they love their work. How can we expect children to succeed and not waste time, not become disheartened at work that, so far as they can discover, has little more relation to their interests than to the mountains of the moon?
+
+We look to nature study to supply the missing links between the child's life and his school work; to afford opportunities for the interested observation of things, and to furnish a strong impulse toward expression. It has been well said that the best result of the primary schools is the power to use correctly one's own language. The chief obstacle in the development of this power is the want of an impulse to express. What can afford a stronger tendency to describe than the attempt to report observations that have been made with interest, even with delight?
+
+[22]
+
+IV
+PLAN OF STUDY
+Begin as soon after the first of January as possible. Assign two periods a week of from ten to twenty minutes each for bird study in the school. Continue the work during these periods until after the celebration of Bird Day in May.
+
+If no other bird is to be found, the English sparrow will answer. Place the following questions upon the blackboard:—
+
+The English Sparrow
+
+How long is this bird from the tip of its beak to the end of its tail?
+
+What is the color of its head? Of its throat? Of its breast? Of the underparts of its body? Of its back? Of its wings?
+
+What is the length, shape, and color of its bill?
+
+What is the color of its legs and feet? How many toes upon each foot, and which way do they point? Does it walk, hop, or run upon the ground? Is its tail square, or notched? Is its flight even and steady, or bounding? What is the difference in appearance between the male and female?
+
+The children should be directed to answer these questions from their own observation, at the next period of study. For the lowest grades two or three questions will be enough for the first attempt, and even then the variety of answers will be surprising.
+
+No other questions should be taken until the first are answered correctly.
+
+The teacher should have an opera glass or a small field glass with which to make her own observations. It is obvious that the more glasses there are among the children, the better. It is advisable for the[23] teacher to make short excursions with the children to the streets to assist them in answering these questions. These can be made at the close of school. As a preparation, have some crumbs or seeds scattered where the birds have been seen.
+
+Continue work with these questions until each one can give a reasonably accurate description of the appearance of the bird and of its movements. Have the older pupils write this. It will make a good language lesson.
+
+The next questions should have reference to the life and characteristics of the bird. What does it eat? Put out crumbs or scraps of meat and see if the bird will eat them. What sounds does the bird make? Does it sing? Imitate as many of its sounds as you can. Determine from its actions what its disposition is. For example—Is it courageous? Is it quarrelsome? Is it inclined to fight? Is it selfish?
+
+Frequently a single incident in a bird's life will furnish an answer to several of these questions. Two sparrows were seen attempting to take possession of the same straw. Each held firmly to his end of the straw. A regular tug of war ensued. They pulled one another about for some time on the top of an awning, and finally, becoming tired of this, they dropped the straw and furiously attacked each other. They fought with beak and claw, paying no attention to the spectators, and fell exhausted to the sidewalk, where they lay upon their backs until able to hop slowly away from each other. It was some little time before they recovered strength to fly in opposite directions, conquering and unconquered.
+
+Early in March advise the children to watch the direction of the sparrows' flight. They will discover that some of them are carrying straws or feathers or other material for nest building. Notice the position and style of these nests. Those built early in the season are always in protected places, under the eaves of houses or in holes in trees or in bird boxes. Some of those built later are in exposed places,[24] clumsy affairs, but well thatched with straw, having an entrance on one side. This nest building may be watched during the entire season, for the English sparrow raises more broods than any other of our birds.
+
+The interpretation of the actions which indicate any of a bird's characteristics is a valuable part of the study on account of its exercise of the imagination and the reason.
+
+A plan similar to the foregoing should be followed with each bird that is studied. With almost all other birds the study will be far more interesting. The English sparrow may be considered as the A B C of birds in his appearance and in the kind of life he leads. He is therefore a good subject to begin with. But even he will be found to exhibit unexpected individuality.
+
+After a few days of this study, or at least before the spring birds begin to arrive, direct the children to try the following experiments. Scatter crumbs where they may be seen from the windows. Nail cups in the trees containing sugar and water, and others containing seeds. Nail up a bone or two, and a piece of suet as large as your two hands. This last will be relished by the birds, for it provides the kind of food most needed in cold weather.
+
+Watch carefully the birds that are attracted by the food. After feeding awhile they will become quite tame and may be closely approached. Write a description of each bird upon the plan used for the English sparrow. Encourage the children to add any observations of their own which throw light upon the habits and character of the birds, since one object of this study is the development of right feeling toward them.
+
+Among the first to arrive will probably be the blue jay, chickadee, or black-capped titmouse, and one or more of the woodpeckers. These all show individual character and are well worth studying.
+
+The blue jay by his striking appearance and outlandish voice challenges attention. He will be found to possess some gentlemanly traits. To illustrate, a number of blue jays were seen taking turns, waiting in[25] line, to feed upon a bone where there was room for only one at a time. There was no scramble, no hurrying of the one who was eating. The blue jay is a most devoted parent, though not considered a good citizen by other birds. Contrary to the usual belief, he has a beautiful song. It is sweet and low and almost as varied as the catbird's, and can be heard only a short distance. It has a reminiscent character, as if he were thinking of past joys.
+
+The black-capped titmouse or the chickadee is noticeable for his sprightliness and cheeriness, and for his trim, tailor-made appearance. Emerson's poem worthily celebrates his brave spirit. He flits around a limb and clings to it with his head up or down, with his feet up or down, as if his movements were not physical exertions, but mental efforts. His simple little song rings out at all hours of the coldest day.
+
+The woodpecker gives himself freely to study. One winter we frequently counted from twelve to fourteen children standing under the tree on which a little sapsucker was at work. The upturned faces of the children did not disturb him at all, although he was only a little above their heads. He drilled away as if his work in the world was the work which must be done. A downy woodpecker with a slightly wounded wing was brought into one of our schoolrooms, where he lived contentedly for several days, pecking a dead treetop, which the boys brought in for him after a good deal of thought and several excursions. The only food he seemed to like was sweetened water, although the children brought him a great variety to choose from. No visitor to a schoolroom ever produced a better effect. His presence, instead of interfering with the regular order, pleased the children, and they did their work even better than usual. When his wing was healed he was dismissed from school through the window, and his flight to a neighboring treetop was anxiously watched.
+
+Upon many other occasions wounded birds have been brought into our schools. Some recovered and others died, but each visit was an epoch in the life of the school.[26]
+
+The other birds most likely to visit this feast during January are the flicker, crow, purple finch, song sparrow, white-breasted nuthatch, snow-flake; American crossbill, white-throated sparrow, tree sparrow, junco, winter wren, golden-crowned kinglet, brown creeper, and even the solitary robin. The sparrow hawk and the sharp-shinned hawk may visit the vicinity to feed upon the other feeders. On the first of January I saw a sparrow hawk sitting on the spire of a church in the heart of a city of eighteen thousand people. After selecting a victim from the sparrows on the street below, he calmly spread his wings and pounced upon him, or with no effort at concealment chased the bird whose flight was nearest.
+
+A female sparrow hawk wintered in the eaves of an apartment house in Morningside Park, New York City. English sparrow was its principal diet, and every morning and afternoon an observer might have seen the hawk soar to the park grounds on its hunting trips.
+
+A few years ago a sharp-shinned hawk visited our yard. Apparently he lived upon the sparrows there for several days. There was no skill in his hunting or effort to take the game unawares. When he wanted a bird he simply left his perch and captured it by speed of wing. His ease of flight was remarkable; as a little boy said, "He just opened his wings and sailed away." He stayed until the sparrows left the neighborhood.
+
+As the season advances the birds will come in greater numbers. On the first of April a little girl in one of our schools had identified and described seventeen different species of birds which she had seen in her yard. The same child fed a family of chipping sparrows; they became so tame that they would come to meet her when she came with crumbs, and would pick them up even when they dropped close to her feet. The next year this family evidently came again and raised another brood and brought them along to be fed, for seven and sometimes eight would come when she called. The English sparrow came also, and the little maid drove them away without the chippies being disturbed. A[27] boy from one of our schools was even more fortunate. In his yard were a number of trees in which ample provision had been made for the birds. Late in April, with other kinds a pair of scarlet tanagers and a pair of rose-breasted grosbeaks visited the trees. These stayed and soon seemed to feel quite at home. To the great delight of their neighbors, the house-dwellers, they built their nests, the grosbeaks in a tree near one side of the porch, the tanagers in one near the opposite side. They became so friendly that sometimes when the boy came out upon the porch and played softly on a mouth organ, the grosbeak's silvery warble and the tanager's loud, clear voice joined him.
+
+Brief written descriptions should be made by the pupils, similar to the following:—
+
+Bluebird.—Length, six and a half inches; extent of wings, about twelve inches; color, back, azure blue; throat, breast, and sides, dull crimson; underpart, white; bill and legs, blackish; eye, brown; arrives early in March; leaves in late November. Song, soft and pleasing warble; sings both in flight and at rest; nests in holes of trees or posts, or in bird houses.
+
+Chickadee.—Length, about five and a half inches; extent of wings, about eight inches; legs, bluish gray; bill, black; back, brownish gray; throat, chin, and top of head, black; sides of head, white; underparts, whitish; wing and tail feathers margined with white; nests in holes in trees and stumps. The common name arises from their familiar note of "chic-a-dee-dee."
+
+Catbird.—Length, nine inches; extent of wings, eleven and a half inches; bill and feet, black; eye, brown; color, slate color, somewhat lighter beneath; top of head and tail, black; reddish under the wings; arrives in May, leaves in October; nests in bushes; lives in gardens and woodside thickets; has a sharp cry not unlike the mewing of a cat, but is a gifted songster.
+
+Meadow Lark.—Length, about ten and a half inches; extent of wings, about sixteen and a half inches; female is smaller; body, thick and stout; legs, large; hind toe reaches out beyond the tail, its claw twice as long as the middle one; bill, brown, lighter at the base, dark towards the point; feet and legs, light brown; throat, breast, and edge of wing, bright yellow; breast with a large black crescent; nests on the ground in the open field; clumsy in flight and in walking; song, a plaintive whistle; arrives in March, leaves in October.[28]
+
+Barn Swallow.—Length, six and three fourths inches; spread of wings, twelve and a half inches; bill, black; legs and feet, light brown; color, upper parts glossy steel blue; tail, very deeply forked, outer tail feathers much longer and narrower than the others; forehead, chin, and throat, deep chestnut; rest of the underparts lighter; nests usually in barns.
+
+Wood Thrush.—Length, eight inches; spread of wings, thirteen inches; legs and feet, flesh-colored; bill, blackish, lighter at base; upper parts cinnamon brown, brightest on top of the head, and shading into olive near the tail; lower parts white and marked with roundish, dusky spots; arrives the first of May, leaves in October. Song consists of sweet, ringing, bell-like notes.
+
+Later these outlines should be expanded into free descriptions, containing all that the pupil has learned about the bird, his habits, his character, and his life.
+
+Each school should aim to possess a bird manual, for the identification of the species. The following are recommended as sufficient for the purpose: "Birds of the United States," by A. C. Apgar; "Birds of Eastern North America," by Frank M. Chapman; "Bird Craft," by Mabel Osgood Wright; "Birds of Pennsylvania," second edition, by Warren (this may possibly be obtained at second-hand bookstores); "Our Common Birds and How to Know Them," by Grant. The report of your own state upon birds, if there is one, will also furnish valuable information.
+
+[29]
+
+V
+FURTHER SUGGESTIONS
+Direct the children to put up boxes for martins, bluebirds, and wrens. These may be also put up around the schoolhouses, if fortunately there is a yard with trees. Boxes for the martins should be large, containing fifteen or more compartments, each ten inches high by eight wide and eight deep, and each having a separate entrance. The martin box or house should be placed twenty feet from the ground, upon the top of a strong post or platform sustained by four smaller posts. If vines are planted at the foot of the supports, they will be ornamental and will make the houses more attractive to the birds. The English sparrows will occupy these compartments; but if the martins conclude to take possession they will push out the sparrows and their belongings without assistance. Every spring I am amused in watching the summary process of ejectment which the martins serve upon the sparrows that have taken possession of their houses. In the morning the sparrows may be in undisturbed possession, but by afternoon the martins occupy their old quarters, having pushed out the nests of the sparrows with their eggs or young.
+
+The boxes for bluebirds and wrens should be smaller and have only one compartment. They should be nailed in the tops of trees. If the English sparrows build in them their nests should be broken up; and this repeatedly, so long as they persist in building. If this is not done the wrens and bluebirds will not come. They are incapable of coping with the sparrows.
+
+Note when the different birds arrive in the spring, making in this way a bird calendar.[30]
+
+Notice also when the birds gather together into flocks in the late summer or autumn, preparatory to taking their leave. The last bird of his kind to leave should be as carefully noted as the first to arrive in your calendar. Distinguish carefully the birds of passage that stop only a short time to rest on their journeys north and south, and those that stay and help to make the summer.
+
+You will need to make frequent excursions afield, always taking your notebook. Take first a small area and master the birds in that; then gradually extend your territory. You can take no more healthful or happy exercise. It will greatly increase the interest of children in all their school duties if their teachers make occasional bird journeys with them. Limit the size of the party to that number which will keep still as a mouse while in bird-land. Encourage the children also to make frequent excursions by themselves, in parties of three or four. Instruct them to have the sun at their backs and to carry if possible one glass with each party. Reports of these excursions can be made in school, while particular attention should be given to the exchange of the knowledge of bird haunts. This can be done during the period devoted to bird study.
+
+Direct the party of excursionists to observe the same birds, notebook in hand, and let each one immediately put down what he actually sees. Afterward compare results. In this way improvement will be made in rapidity and accuracy of observing.
+
+There are two ways by which birds may be closely approached. The first is to go to some locality where birds have been seen and to stand or sit in perfect quiet and wait for them to come. We have known some of the shyest wood birds to come within a few feet of the motionless observer. It is not an uncommon thing for one who waits to be able to look directly into the eyes of the American redstart, the chestnut-sided and golden-winged warbler, the wood thrush, catbird, and of almost any other of the birds.
+
+If one can imitate the owl and make a fair "hoot," otherwise keeping[31] still, he may attract many birds that will feel bound to settle the question of his identity. A young friend of mine, by a good imitation of a blue jay's quack, finds many little woods' folks peering at him from the trees which he might not otherwise see. The "smack" which is produced by violently kissing the back of the closed fingers will call many birds from their hiding places, especially during the nesting season. The sound is similar to that of a bird in distress.
+
+The second method is to follow a bird very quietly and slowly, being careful not to make any motions which would startle him. In this way a shore lark has been followed all over a field, the observer gradually coming near enough to the bird to see what he was doing, and to watch his movements as he pulled the larvæ of beetles out of the ground, cracked their cases, and ate the contents. All birds that feed in the fields, the meadow larks, the plovers, and the sparrows, may be studied in the same way.
+
+It is commonly thought to be difficult to get close to the veery. On one occasion, while the writer and a companion were resting from a long ramble, the air was suddenly suffused with the songs of veeries. The music seemed to fill the woods, as an organ seems to fill the church with sound. It was weird and suggestive and never to be forgotten. The still, deep woods seemed like enchanted ground where nothing evil could come. After some search we saw one of the birds in a tree not far from us. As we approached him he flew to another tree. We humbly followed on foot from tree to tree, when to our surprise he stopped on a low tree on the outskirts of the wood and allowed us to come almost within reach of him, and to stand wonder-stricken while he sang in answer to his companions. We stayed for twenty minutes motionless. It was difficult to believe that this bird was singing. His notes had a ventriloquous effect, his beak was scarcely parted, and it was only by the trembling of the feathers of his throat that we were sure the song came from him. Since this time we have frequently found the veeries; in fact one locality is known to us as Veeryville.[32]
+
+It is not necessary to live in the country in order to be a bird student and to carry out the suggestions here given. All the large cities have parks where birds may be observed and be encouraged to become friendly to the observer. Central Park in New York is the home of a great variety of birds. Bronx Park is said to be a paradise for them. On Boston Common most of the birds which come to that latitude have been seen. There is no city so poor that it cannot boast of a few birds in its vicinity.
+
+Great interest and delight may be added to the study of birds by the use of the camera. If the teacher or one of the older pupils is so fortunate as to have a kodak and will take it when visiting the woods, or will focus it upon birds in the dooryard, the pictures may possess much value. To attempt to "take" a bird in flight is, of course, a difficult matter, though it may be done; but birds upon the nest, birds feeding their young, or in the trees above the nest, evidently protecting it, have been successfully taken. Birds' nests with the eggs in make most fascinating pictures. At an entertainment given by the Pennsylvania Audubon Society in Philadelphia in December, 1898, the audience with one accord cheered the picture of a nest which was thrown upon a screen.
+
+Work of this kind is especially adapted for high schools, and there are sure to be several painstaking amateurs among the pupils. To possess genuine value from the point of view of the naturalist, the pictures should not be touched up, no matter how much artistic beauty might thus be given to them; they should be entirely true to nature.
+
+On no account should children be encouraged to make collections of birds or of eggs. The only objection the author has felt to the very fine bird manuals before the public is that they contain minute directions for the preparation of dead birds for purposes of mounting and preservation, and also for the collection and preservation of birds' eggs. If this were to cause the school children of the country to set out to make collections of birds and of eggs in order to study them, the study would better be omitted. Nothing more deadly than an opera glass[33] should be aimed at a bird for a generation. The utility of a collection is not so great; a dead bird's plumage is not as beautiful as in life, and he loses every attitude and movement which makes him an individual. A corpse is not a bird. Persons who can identify birds by one glimpse of them through the trees, or by a few notes of their song, or by their flight are frequently at a loss to identify the same birds when they are dead, unless they are familiar with the dead birds.
+
+The only collection the children should be encouraged to make is that of nests after the birds are through with them; and especially of nests with whose family history they are acquainted. These may be brought into the schoolroom. In one of our school yards the children discovered a pair of red-eyed vireos building. The nest was so situated that it could be seen from one of the upper schoolroom windows. After the young had left, the nest was taken down, and to the pleasure which the children had enjoyed in watching its builders and their family was added another. They found in the bottom of the nest little bits of the papers they had used in school with their letters and figures upon them.
+
+[34]
+
+VI
+DIRECTIONS FOR WRITTEN WORK
+Have the children give anecdotes about birds that they have observed. Let them describe actions which they saw them perform, paying particular attention to the ways of birds in eating. For example, sparrows were observed carrying hard crusts of bread to a little pool of water, formed in a dent in a tin roof, to soften before attempting to eat them. Day after day crusts were put out, and the water was renewed.
+
+Written descriptions of birds feeding their young.—Young birds live entirely upon insect life. It has been computed that a bird during the first few weeks of its life consumes nearly one and one half times its weight of insects daily. Note the amazing amount of insect life that will be destroyed by the birds of a neighborhood in a single season. Give, if possible, illustrations from your own observation. A robin was noticed feeding one of its young, which sat on a limb with its mouth open, crying for more, except when it was stopped with food. The parent came with her beak filled with worms twenty-seven times in less than as many minutes, and then left her child seemingly as hungry as ever, for he complained and hopped along the limb, keeping a sharp lookout for several minutes. That chick must have been as full of worms as a fisherman's bait-box. Picture the condition of our lawns, gardens, and groves if all the birds were suddenly banished and the insects held full sway. In this connection, the writer should study and make quotations or abstracts from "The Birds of Killingworth," by Longfellow.
+
+In a recent lecture, Prof. Witmer Stone, of Philadelphia, cited many facts to show that birds are nature's great check on the excess of in[35]sects, and that they keep the balance between plants and insect life. Ten thousand caterpillars, it has been estimated, could destroy every blade of grass on an acre of cultivated ground. In thirty days from the time it is hatched an ordinary caterpillar increases 10,000 times in bulk, and the food it lives and grows on is vegetable. The insect population of a single cherry tree infested with aphides was calculated by a prominent entomologist at no less than twelve million. The bird population of cultivated country districts has been estimated at from seven hundred to one thousand per square mile. This is small compared with the number of insects, yet as each bird consumes hundreds of insects every day, the latter are prevented from becoming the scourge they would be but for their feathered enemies.
+
+Mr. E. H. Forbush, Ornithologist of the Board of Agriculture of Massachusetts, states that the stomachs of four chickadees contained 1,028 eggs of the cankerworm. The stomachs of four other birds of the same species contained about 600 eggs and 105 female moths of the cankerworm. The average number of eggs found in twenty of these moths was 185; and as it is estimated that a chickadee may eat thirty female cankerworm moths per day during the twenty-five days which these moths crawl up trees, it follows that in this period each chickadee would destroy 138,750 eggs of this noxious insect.
+
+A pamphlet issued by the Department of Agriculture of the United States says that the cuckoo, which is common in all the Eastern States, has been conclusively shown to be much given to eating caterpillars, and, unlike most birds, does not reject those that are covered with hair. In fact, cuckoos eat so many hairy caterpillars that the hairs pierce the inner lining of their stomach and remain there, so that when the stomach is opened and turned inside out, it appears to be lined with a thin coating of hair. This bird also eats beetles, grasshoppers, sawflies, and spiders. It turns out from the investigations of the department that the suspicion with which all farmers look upon woodpeckers is undeserved by that bird. These birds rarely leave an important mark[36] upon a healthy tree, but when a tree is affected by wood-boring larvæ the insects are accurately located, dislodged, and devoured. In case the holes from which the borers are taken are afterward occupied and enlarged by colonies of ants, these ants are drawn out and eaten. Woodpeckers are great conservators of forests, and to them more than to any other agency is due the preservation of timber from hordes of destructive insects.
+
+The department defends the much-abused crow and states that he is not by any means the enemy of the farmer, in which rôle he is generally represented. The pamphlet shows that he is known to eat frogs, toads, salamanders, and some small snakes, and that he devours May beetles, June bugs, grasshoppers, and a large variety of other destructive insects. It is admitted that he does some damage to sprouting corn, but this can be prevented by tarring the seed, which not only saves the corn, but forces the crow to turn his attention to insects.
+
+Insects injurious to vegetation.—Essays may be written describing some of the insects injurious to fruit trees; also the birds that feed largely upon these insects—the warblers, thrushes, orioles, wrens, woodpeckers, vireos, and others. Tell, if possible, from your own observation, of their curious, but effective, ways of finding their food. Describe how the birds inspect the trees, limb by limb and bud by bud, in their eager search for the eggs, larvæ, and mature forms of insects. Note, especially, the oriole as he runs spirally round a branch to the very tip, then back to the trunk, treating branch after branch in the same way, till the whole tree has been thoroughly searched, almost every bud having been in the focus of those bright eyes. It is hard to describe which is the more beautiful—their brilliant, flaming colors or their bugle-like bursts of music. Is the woodpecker's drumming, and apparent listening with the side of his head turned to the tree, all for fun, and nothing for reward?
+
+Birds that feed upon the potato beetle.—The grosbeaks and the tanagers. Describe these. Why are these and other brightly colored birds[37] so shy? What has been the effect of the extensive killing of them for ornament, and the equally cruel practice of securing their young to be kept in cages? Note how much more attractive our fields and gardens would be if these beautiful beings were common in them, and by their quaint ways were "teaching us manners."
+
+Personations of birds.—Ask the children to write "personations" of birds, as if the writer were the bird. Give them the following directions: Write in the first person. Describe yourself as accurately as you are able, without telling your name. Tell of your habits and manner of life, your summer and winter homes, your home cares—your nest building, your parental joys and anxieties, the enemies you have to avoid. Mention at some length the trouble you take to give your little ones a good start in life, and to enable them to earn their own living. Describe your songs, and try to indicate why they differ, and what you mean by each one. Try to present a somewhat complete picture of the bird and its life, from the bird's point of view. At the close of your personation the hearers may vote upon the name of the bird presented.
+
+A family of birds may also be described, as if they were persons,—and are they not? A very fine model of this kind of work is "Our New Neighbors at Ponkapog," by T. B. Aldrich.
+
+Have essays written upon the following subjects:—
+
+Are there birds that do not sing?
+
+What is the attitude of other birds to the owl?
+
+Is any country too cold, or any too warm, for birds?
+
+Have birds individuality?
+
+What is the largest bird of North America?
+
+The smallest?
+
+What laws has your state made about birds?
+
+Ought the "government to own" the birds? (That is, make laws for their protection.)
+
+Is the blue jay wicked?
+
+What birds walk?
+
+Do birds travel at night, during their migrations?
+
+[38]
+
+Beginning in March, note for several days the different kinds of birds you see, which were not seen the day before. Make at least two observations daily, one in the morning and one after school. When is the greater number of new birds seen, in the morning or in the afternoon? Or, if you live in a comparatively quiet neighborhood, even in a large city, go out at night and listen for bird sounds in the air. You need not go far to make this trial—your own back door "opens into all outdoors."
+
+What states have established a Bird Day by law?
+
+Is woman cruel or only thoughtless?
+
+Do robins raise more than one brood in a season? If so, do they use the same nest twice? If they raise two broods, what becomes of the first, while the mother is sitting upon the eggs for the second?
+
+Watch for a robin leading out his family. Notice the feeding, after the birds are large enough to run and fly fairly well. The young birds are placed apart, and kept apart by the parent, who visits each one in turn, and rebukes any who tries to be piggish, sometimes rapping it with his bill when it runs out of turn. Notice this parent teaching the young to sing. It is a very interesting sight.
+
+What birds have you heard sing at night?
+
+More birds sing at night than is commonly supposed. The female robin calls to her mate frequently during the night, and he responds with a song. The catbird also sings at night. Last May one was heard to sing three nights in succession from eleven o'clock until daylight in response to little complaining calls from his mate. The song sparrow, warblers, and many other birds sing at night. Their songs at these times sound as if the bird were sleepy and reluctant to sing, or as if he were startled and were hurrying through the performance. Make a note of songs heard at night and try to determine the cause. Learn to distinguish the call of the female from the song of the male.[39]
+
+The kinds of nests.—What birds are weavers? What ones are masons or plasterers? What ones are tailors, in the construction of their nests?
+
+Find a pair of birds engaged in nest building; robins may generally be found. Learn to distinguish the male from the female in appearance, as well as voice. Notice what materials they are using. Which bird takes the lead in building? What does the other bird do? Does he ever carry material, or does he simply act as escort? Does he ever protect his mate from other birds?
+
+Write this out, carefully drawing your conclusions from your own observations. After the young birds have left the nest and have no further use for it, you may take the nest and examine it closely. You will find that while there is a similarity in the nests of the same kind of birds, they differ considerably in the materials of which they are composed. For example, the typical robin's nest consists of straws and hairs plastered together with mud and lined with some soft material, but others have been found made entirely of raveled rope; others of carpet rags. The bird evidently is not guided in this matter by blind instinct, but uses its reason in adapting materials that are at hand.
+
+If you are fortunate you may find a pair of orioles building their nest. Place some bright-colored yarn or string in pieces of convenient length where the birds will see them. Some of them are almost sure to be woven into the nest. The oriole's nest may be attached to a limb by two or more cords; if it is, notice how it is prevented from swinging by side ropes. You will find it guyed against the prevailing winds. The oriole frequently ties several twigs together, and so uses these to suspend his nest. Notice the nest pouch; those built near houses are quite shallow; those near forests are much deeper. Can you tell why?
+
+The wings of birds.—Describe the different kinds, as short and round, or long and slender, and the effect of the wing-shape upon the bird's motion in the air. Describe the flights of different birds.[40]
+
+Songs of birds.—Write the syllables which seem to you to express the different songs of birds. Notice the different songs of the same bird. A song sparrow was observed to have twelve different songs. He sang each one several times over, as if each song had a number of verses. Then changing his position, he would sing another. To most ears the robin's song is always the same, but close attention discovers that there are variations. Many birds are genuine musicians and compose as they sing, not having formal songs.
+
+Free description of birds.—Write description of some bird of your acquaintance, noting the following:—
+
+Its appearance.—Color, gait, flight, size from tip of beak to end of tail, spread of wings.
+
+Its common name.—Why given?
+
+Time of arrival and departure.
+
+Character.—Is it trustful, or shy and retiring?
+
+Song.—Season when song is most frequent, also times of day. Does it consist of many or only a few notes? Is it cheery, like the robin's, or tuneful, like the thrush's, or rollicking and rapturous, like the bobolink's, or a Romanza, like the catbird's? Notice the different emotion sounds, the notes of fear, of parental or conjugal reprimand, of joy, of anger, of deep sorrow, made by the bird at times.
+
+Food.—Insects (kinds), seeds, fruit, etc.
+
+Nest.—Where placed, how made?
+
+Incidents.—From the writer's knowledge of the bird.
+
+This bird in literature.—What writers have described, what poets have immortalized him? How did they characterize him?
+
+Some of the following books are almost indispensable to one who wishes to know the birds:—
+
+"Wake Robin," John Burroughs; "Birds and Poets," John Burroughs; "The Birds and Seasons of New England," Wilson Flagg; "Upland and Meadow," Charles C. Abbott; "Bird Ways," Olive Thorne Miller; "Birds through an Opera Glass," Florence A. Mer[41]riam; "Birds in the Bush," Bradford Torrey; "The Birds About Us," Charles C. Abbott; "From Blomidon to Smoky," Frank Bolles.
+
+Recent magazines should be searched and the current ones scrutinized for articles by any of the above-named writers.
+
+Destruction of birds.—Find out how many birds are annually slaughtered in the United States, and for what purposes.
+
+In the report of the American Ornithologist Union published in 1886, it was estimated that about five million birds were annually required to fill the demand for the ornamentation of the hats of the American women. In 1896 it was estimated that the number thus used was ten million. "The slaughter is not confined to song-birds; everything that wears feathers is a target for the bird butcher. The destruction of 40,000 terns in a single season on Cape Cod, a million rail and reed birds (bobolinks) killed in a single month near Philadelphia, are facts that may well furnish food for reflection. The swamps and marshes of Florida are well known to have become depopulated of their egrets and herons, while the state at large has been for years a favorite slaughter ground of the milliners' emissaries." An article in Forest and Stream, speaking of the destruction of birds on Long Island, states that during a short period of four months 20,000 were supplied to the New York dealers from a single village.
+
+The Audubon Society of Massachusetts has looked up the figures and reports that "it is proved that into England alone between 25,000,000 and 30,000,000 birds are imported yearly, and that for Europe the number reaches 150,000,000. Hence, the fashionable craze has annually demanded between 200,000,000 and 300,000,000 birds. From the East Indies alone a dealer in London received 400,000 humming birds, 6,000 birds of paradise, and 400,000 miscellaneous birds. In an auction room, also in London, within four months, over 800,000 East and West Indian and Brazilian bird skins, besides thousands of pheasants and birds of paradise, were put up for sale."
+
+This demand for birds has been going on for a quarter of a century,[42] and billions of rich-plumaged creatures have been slaughtered to meet it, and several of the feathered tribes have been exterminated.
+
+Write to the following for literature upon the destruction of birds:—
+
+Humane Education Committee, 61 Westminster Street, Providence, R. I.; George T. Angell, Boston, Mass.; Secretary of the Massachusetts Audubon Society, Boston, Mass.; Secretary of the New York Audubon Society at New York; Secretary of the Department of Agriculture, Washington, D. C.; Secretary of the Audubon Society of Pennsylvania at Philadelphia; also write to the Department of Agriculture of your own state.
+
+[43]
+
+VII
+PROGRAMS FOR BIRD DAY
+A Bird Day exercise, in order to have much value educationally, should be largely the result of the pupils' previous work, and should not be the mere repetition of a prepared program taken verbatim from some paper or leaflet. It is, of course, better to have the pupils recite this leaflet or list of statements than it would be to have it ground out of a phonograph. The program should be prepared by the pupils under direction of the teacher.
+
+The following general suggestions are offered:—
+
+1. For the first observance of this day by a school it would be well to have some pupil read Senator Hoar's petition of the birds to the Legislature of Massachusetts.
+
+PETITION OF THE BIRDS
+
+Written by Senator Hoar to the Massachusetts Legislature
+
+The petition which was instrumental in getting the Massachusetts law passed, prohibiting the wearing of song and insectivorous birds on women's hats, was written by Senator Hoar. The petition read as follows:—
+
+To the Great and General Court of the Commonwealth of Massachusetts: We, the song birds of Massachusetts and their playfellows, make this our humble petition. We know more about you than you think we do. We know how good you are. We have hopped about the roofs and looked in at your windows of the houses you have[44] built for poor and sick and hungry people, and little lame and deaf and blind children. We have built our nests in the trees and sung many a song as we flew about the gardens and parks you have made so beautiful for your children, especially your poor children to play in. Every year we fly a great way over the country, keeping all the time where the sun is bright and warm. And we know that whenever you do anything the other people all over this great land between the seas and the Great Lakes find it out, and pretty soon will try to do the same. We know. We know.
+
+We are Americans just the same as you are. Some of us, like you, came across the great sea. But most of the birds like us have lived here a long while; and the birds like us welcomed your fathers when they came here many, many years ago. Our fathers and mothers have always done their best to please your fathers and mothers.
+
+Now we have a sad story to tell you. Thoughtless or bad people are trying to destroy us. They kill us because our feathers are beautiful. Even pretty and sweet girls, who we should think would be our best friends, kill our brothers and children so that they may wear our plumage on their hats. Sometimes people kill us for mere wantonness. Cruel boys destroy our nests and steal our eggs and our young ones. People with guns and snares lie in wait to kill us; as if the place for a bird were not in the sky, alive, but in a shop window or in a glass case. If this goes on much longer all our song birds will be gone. Already we are told in some other countries that used to be full of birds, they are now almost gone. Even the nightingales are being killed in Italy.
+
+Now we humbly pray that you will stop all this and will save us from this sad fate. You have already made a law that no one shall kill a harmless song bird or destroy our nests or our eggs. Will you please make another one that no one shall wear our feathers, so that no one shall kill us to get them? We want them all ourselves. Your pretty girls are pretty enough without them. We are told that it is as easy for you to do it as for a blackbird to whistle.
+
+If you will, we know how to pay you a hundred times over. We will teach your children to keep themselves clean and neat. We will show them how to live together in peace and love and to agree as we do in our nests. We will build pretty houses which you will like to see. We will play about your garden and flower beds—ourselves like flowers on wings, without any cost to you. We will destroy the wicked insects and worms that spoil your cherries and currants and plums and apples and roses. We will give you our best songs, and make the spring more beautiful and the summer sweeter to you. Every June morning when you go out into the field, oriole and bluebird and blackbird and bobolink will fly after you and make the day[45] more delightful to you. And when you go home tired after sundown, vesper sparrow will tell you how grateful we are. When you sit down on your porch after dark, fifebird and hermit thrush and wood thrush will sing to you; and even whip-poor-will will cheer you up a little. We know where we are safe. In a little while all the birds will come to live in Massachusetts again, and everybody who loves music will like to make a summer home with you.
+
+The signers are:—
+
+Brown Thrasher,
+Robert o' Lincoln,
+Hermit Thrush,
+Vesper Sparrow,
+Robin Redbreast,
+Song Sparrow,
+Scarlet Tanager,
+Summer Redbird,
+Blue Heron,
+Humming Bird,
+Yellowbird,
+Whip-poor-will,
+Water Wagtail,
+Woodpecker,
+Pigeon Woodpecker,
+Indigo Bird,
+Yellowthroat,
+Wilson's Thrush,
+Chickadee,
+Kingbird,
+Swallow,
+Cedar Bird,
+Cowbird,
+Martin,
+Veery,
+Chewink,
+Vireo,
+Oriole,
+Blackbird,
+Fifebird,
+Wren,
+Linnet,
+Pewee,
+Phœbe,
+Yoke Bird,
+Lark,
+Sandpiper.
+It should be noted that the result of this petition was the passage of a law by the Legislature of Massachusetts forbidding the wearing of parts of wild birds. A bill forbidding the transportation of feathers or the skins of birds from one state to another was also introduced by Senator Hoar in the United States Senate.
+
+2. At this first exercise it would be well to have read "Our New Neighbors at Ponkapog," by T. B. Aldrich.
+
+3. The best essays that have been written by the pupils during their preliminary study may be given. If the school has not made this preliminary study, select subjects and have essays written according to the directions already given, allowing as much time as possible for original observations.
+
+4. Have recitations from the poets. These will add a peculiar charm to the occasion. A short list of suitable poems will be given. Many[46] others may be found in a book called "Voices of the Speechless," published by Houghton, Mifflin & Co.
+
+The works of John Burroughs, Bradford Torrey, Maurice Thompson, Mrs. Olive Thorne Miller, and Dr. C. C. Abbott abound in passages which are excellent for recitation. It is surprising how familiar the best-known novelists have been and are with birds. In appreciation of them they are second only to the poets. Charles Reade's description of the lark's song in the mines of Australia, in "Never Too Late to Mend," is an inspiring recitation.
+
+5. Short quotations from well known authors should be given, if possible, by every pupil in the school. We give a few taken almost at random:—
+
+Away over the hayfield the lark floated in the blue, making the air quiver with his singing; the robin, perched on a fence, looked at us saucily and piped a few notes by way of remark; the blackbird was heard, flute-throated, down in the hollow recesses of the wood; and the thrush, in a holly tree by the wayside, sang out his sweet, clear song that seemed to rise in strength as the wind awoke a sudden rustling through the long woods of birch and oak.—William Black, in Adventures of a Phaeton.
+
+We seemed to hear all the sounds within a great compass—in the hedges and in the roadside trees, far away in woods or hidden up in the level grayness of the clouds: twi, twi, trrrr-weet!—droom, droom, phloee!—tuck, tuck, tuck, tuck, feer!—that was the silvery chorus from thousands of throats. It seemed to us that all the fields and hedges had but one voice, and that it was clear and sweet and piercing.—William Black, Ibid.
+
+Silvia could hear the twittering of the young starlings in their nests as their parents went and came carrying food, and the loud and joyful "tirr-a-wee, tirr-a-wee, prooit, tweet!" of the thrushes, and the low currooing of the wood pigeon, and the soft call of the cuckoo, that seemed to come in whenever an interval of silence fitted. The swallows dipped and flashed and circled over the bosom of the lake. There were blackbirds eagerly but cautiously at work, with their spasmodic trippings, on the lawn. A robin perched on the iron railing eyed her curiously and seemed more disposed to approach than to retreat.—William Black, in Green Pastures and Piccadilly.[47]
+
+A jay fled screaming through the wood, just one brief glimpse of brilliant blue being visible.—William Black, Ibid.
+
+And as they came near to one dark patch of shrubbery, lo! the strange silence was burst asunder by the rich, full song of a nightingale.—William Black, Ibid.
+
+A sudden sound sprang into the night, flooding all its darkness with its rich and piercing melody—a joyous, clear, full-throated note, deep-gurgling now, and again rising with thrills and tremors into bursts of far-reaching silver song that seemed to shake the hollow air. A single nightingale had filled the woods with life. We cared no more for those distant and silent stars. It was enough to sit here in the gracious quiet and listen to the eager tremulous outpouring of this honeyed sound.—William Black, in Strange Adventures of a House-Boat.
+
+Shoot and eat my birds! The next step beyond, and one would hanker after Jenny Lind or Miss Kellogg.—Henry Ward Beecher.
+
+There on the very topmost twig, that rises and falls with willowy motion, sits that ridiculous, sweet-singing bobolink, singing as a Roman candle fizzes, showers of sparkling notes.—Ibid.
+
+This poet affirms that our bobolink is superior to the nightingale:—
+
+Bobolink, that in the meadow,
+Or beneath the orchard's shadow,
+Keepest up a constant rattle
+Joyous as my children's prattle,
+Welcome to the North again,
+Welcome to mine ear thy strain,
+Welcome to mine eye the sight
+Of thy buff, thy black and white.
+Brighter plumes may greet the sun
+By the banks of Amazon;
+Sweeter tones may weave the spell
+Of enchanting Philomel;
+But the tropic bird would fail,
+And the English nightingale,
+If we should compare their worth
+With thine endless, gushing mirth.
+—Thomas Hill.[48]
+
+The mocking bird is a singer that has suffered much from its powers of mimicry. On ordinary occasions, and especially in the daytime, it insists on playing the harlequin. But when free in its own favorite haunts at night, it has a song, or rather songs, which are not only purely original, but are also more beautiful than any other bird music whatsoever. Once I listened to a mocking bird singing the livelong spring night, under the full moon, in a magnolia tree; and I do not think I shall ever forget its song.
+
+The great tree was bathed in a flood of shining silver; I could see each twig, and mark every action of the singer, who was pouring forth such a rapture of ringing melody as I have never listened to before or since. Sometimes he would perch motionless for many minutes, his body quivering and thrilling with the outpour of music. Then he would drop softly from twig to twig till the lowest limb was reached, when he would rise, fluttering and leaping through the branches, his song never ceasing for an instant until he reached the summit of the tree and launched into the warm scent-laden air, floating in spirals, with outspread wings, until, as if spent, he sank gently back into the tree and down through the branches, while his song rose into an ecstasy of ardor and passion. His voice rang like a clarionet in rich, full tones, and his execution covered the widest possible compass; theme followed theme, a torrent of music, a swelling tide of harmony, in which scarcely any two bars were alike. I stayed till midnight listening to him; he was singing when I went to sleep; he was still singing when I woke a couple of hours later; he sang through the livelong night.—Theodore Roosevelt.
+
+Amid the thunders of Sinai God uttered the rights of cattle, and said that they should have a Sabbath. "Thou shalt not do any work, thou, nor thy cattle." He declared with infinite emphasis that the ox on the threshing-floor should have the privilege of eating some of the grain as he trod it out, and muzzling was forbidden. If young birds were taken from the nest for food, the despoiler's life depended on the mother going free. God would not let the mother-bird suffer in one day the loss of her young and her own liberty. And he who regarded in olden time the conduct of man toward the brutes, to-day looks down from heaven and is interested in every minnow that swims the stream, and every rook that cleaves the air.—DeWitt Talmage, D.D.
+
+And how refreshing is the sight of the birdless bonnet! The face beneath, no matter how plain it may be, seems to possess a gentle charm. She might have had birds, this woman, for they are cheap enough and plentiful enough, heaven knows; but she has them not, therefore she must wear within things infinitely precious, namely, good sense, good taste, good feeling. Does any woman imagine these with[49]ered corpses (cured with arsenic), which she loves to carry about, are beautiful? Not so; the birds lost their beauty with their lives.—Celia Thaxter.
+
+I walked up my garden path as I was coming home from shooting. My dog ran on before me; suddenly he went slower and crept carefully forward as if he scented game. I looked along the path and perceived a young sparrow, with its downy head and yellow bill. It had fallen from a nest (the wind was blowing hard through the young birch trees beside the path) and was sprawling motionless, helpless, on the ground, with its little wings outspread. My dog crept softly up to it, when suddenly an old black-breasted sparrow threw himself down from a neighboring tree and let himself fall like a stone directly under the dog's nose, and, with ruffled feathers, sprang with a terrified twitter several times against his open, threatening mouth. He had flown down to protect his young at the sacrifice of himself. His little body trembled all over, his cry was hoarse, he was frightened to death; but he sacrificed himself. My dog must have seemed to him a gigantic monster, but for all that, he could not stay on his high, safe branch. A power stronger than himself drove him down. My dog stopped and drew back; it seemed as if he, too, respected this power. I hastened to call back the amazed dog, and reverently withdrew. Yes, don't laugh; I felt a reverence for this little hero of a bird, with his paternal love.
+
+Love, thought I, is mightier than death and the fear of death; love alone inspires and is the life of all.—Ivan Tourgueneff.
+
+The first sparrow of spring! The year beginning with younger hope than ever! The faint, silvery warblings heard over the partially bare and moist fields from the bluebird, the song sparrow, and the redwing, as if the last flakes of winter tinkled as they fell!—H. D. Thoreau.
+
+I heard a robin in the distance, the first I had heard for many a thousand years, methought, whose note I shall not forget for many a thousand more,—the same sweet, powerful song as of yore.—Ibid.
+
+Walden is melting apace. A great field of ice has cracked off from the main body. I hear a song sparrow from the bushes on the shore,—olit, olit, olit—chip, chip, chip, che char—che wis, wis, wis. He, too, is helping to crack the ice.—Ibid.
+
+The bluebird carries the sky on his back.—Ibid.
+
+6. One of the most interesting features of a Bird Day program will be the personations of birds.
+
+The following was given by a boy in the seventh grade:[50]—
+
+One day in February a gentleman and his wife stopped beside the wall of old Fort Marion, in St. Augustine, to listen to my song. The sun was shining brightly, and little white flowers were blooming in the green turf about the old fort. It was not time yet to build my nest, so I had nothing to do but sing and get my food and travel a little every day toward my Northern home.
+
+I am about as large as a robin, and although there is nothing brilliant in my plumage I am not a homely bird. I like the songs of other birds and sometimes sing them. I frequently sing like my cousins, the catbirds and robins and thrushes. But I have my own song, which is unlike all the others. My mate and I build a large nest of small sticks, pieces of string, cotton, and weeds, in thick bushes or low trees. We have five eggs that are greenish blue and spotted with brown. We eat many beetles, larvæ, and many kinds of insects which we find feeding upon plants. The worst enemy we have is man. He steals our children almost before we have taught them to sing, and puts them in cages. He is a monster.
+
+Many poems have been written about me. One of the finest is by Sidney Lanier, in which he calls me "yon trim Shakespeare on the tree."
+
+Any one who has heard my song can never forget me.
+
+What is my name?
+
+7. Bird facts and proverbs form a valuable part of a program and may be given by some of the children. Let the pupils search for them and bring some similar to these:—
+
+Birds flock together in hard times.
+
+A bird in the bush is worth two in the hand.
+
+The American robin is not the same bird as the English.
+
+The bluebird and robin may be harbingers of spring, but the swallow is the harbinger of summer.
+
+The dandelion tells me to look for the swallow; the dog-toothed violet when to expect the wood thrush.—John Burroughs.
+
+It is not thought that any one bird spends the year in one locality, but that all birds migrate, if only within a limited range.
+
+A loon was caught, by a set line for fishing, sixty-five feet below the surface of a lake in New York, having dived to that depth for a fish.
+
+The wood pewee, like its relative, the phœbe, feeds largely on the family of flies to which the house fly belongs.[51]
+
+The birds of prey, the majority of which labor night and day to destroy the enemies of the husbandman, are unceasingly persecuted.
+
+Seventy-five per cent of the food of the downy woodpecker is insects.
+
+The cow blackbird lays its eggs in other birds' nests, one in a nest. What happens afterwards?
+
+Why should not a man love a bird? If the palm of one could clasp the pinion of the other, there would come together two of the greatest implements God and nature have ever given any two creatures to explore the world with, and when two bipeds gaze at each other, eye to eye, the intelligence in the one might well take off its hat to the subtle instincts in the other.—James Newton Baskett.
+
+A bird on the bonnet means so much less bread on the table. A bird in the orchard is a sort of scavenger and pomologist combined, and does his share in giving you a dish of fruit for dinner. The scarlet tanager looks like a living ruby in a green tree; but—I speak bluntly—it looks like a chunk of gore on a woman's bonnet. In behalf of good taste and the birds, I enter my protest against this barbarous Custom.—Leander T. Keyser.
+
+What does it cost, this garniture of death?
+It costs the life which God alone can give;
+It costs dull silence, where was music's breath;
+It costs dead joy, that foolish pride may live.
+Ah, life, and joy, and song, depend upon it,
+Are costly trimmings for a woman's bonnet.
+—May Riley Smith.
+
+The program may be diversified by songs about birds. Many suitable for this occasion will be found in a collection called "Songs of Happy Life," made by Sarah J. Eddy. It is published by the Nature Study Publishing Company, of Providence, R. I.
+
+[52]
+
+VIII
+THE POETS AND THE BIRDS
+"The birds are the poets' own," says Burroughs. How could it be otherwise? The bird, with his large brain, quick circulation, and high temperature, is possessed of a tropical, ecstatic soul that blossoms into music as naturally as a bulb bursts into bloom and fragrance. He is a creature of marvelous inheritance. Poetry is a true bird-land, where you shall hear the birds as often as in any meadow or orchard on a May morning. All poets have been their lovers, from the psalmist of old, who knew "all the birds of the mountains," to our own Lowell with his "Gladness on wings—the bobolink is here."
+
+The poets, who voice our deepest thoughts, have studied birds with the utmost care. It is astonishing to note the mention made of them in the pages of Browning, Tennyson, and in fact of every great maker of verse. Not merely as adjuncts of the landscape are they mentioned, but with intensity of feeling, as in William Watson's poem on his recovery from temporary loss of mind—one of the most pathetic poems ever written—where he thanks the Heavenly Power for letting him feel once again at home in nature and again related to the birds and to human life. Dr. Van Dyke's wish that, when his twilight hour is come, he "may hear the wood note of the veery" finds response in the heart of every one who has listened to that song. Frequently the poet seems to have entered into the life of the bird and to have found his inner secret, as Keats in the "Ode to a Nightingale":—
+
+Immortal bird, thou wast not born for death,
+No hungry generations tread thee down.[53]
+Sometimes the words seem to have caught the rhythm and ripple of the song, as in Browning's reference to the thrush:—
+
+The wise thrush, he sings each song twice over,
+Lest you think he never could recapture
+That first fine careless rapture.
+Or the bird's voice may be so suggestive as to lead the seer to the very limits of thought and aspiration, like Shelley's "Skylark." As we need the help of the naturalists, who see more accurately than we, we also need the assistance of the poet's clearer vision, with its wider and deeper sweep. How completely Sidney Lanier summed up the mocking bird! and how much more pleasing is the bird in the tree because of the bird in the poem:—
+
+Superb and sole, upon a plumèd spray
+That o'er the general leafage boldly grew,
+He summed the woods in song; or typic drew
+The watch of hungry hawks, the lone dismay
+Of languid doves when long their lovers stray,
+And all birds' passion plays that sprinkle dew
+At morn in brake or bosky avenue.
+Whate'er birds did or dreamed, this bird could say.
+Then down he shot, bounced airily along
+The sward, twitched in a grasshopper, made song
+Midflight, perched, prinked, and to his art again.
+Sweet science, this large riddle read me plain:—
+How may the death of that dull insect be
+The life of yon trim Shakespeare on the tree?
+Recitations from the poets should be a prominent feature of Bird Day exercises. Readings and studies of poems about birds may be very profitably made a part of the literary work of the year.
+
+The following poems are suitable for recitation and study:[54]—
+
+"The Birds' Orchestra," Celia Thaxter; "The Robin," Celia Thaxter; "The Song Sparrow," Celia Thaxter; "The Blackbird," Alice Cary; "The Raven's Shadow," William Watson; "On Seeing a Wild Bird," Alice Cary; "What Sees the Owl?" Elizabeth S. Bates; "Lament of a Mocking Bird," Frances Anne Kemble; "The Snow-bird," Dora Read Goodale; "To a Seabird," Bret Harte; "The Rain Song of the Robin," Kate Upson Clark; "The Swallow," Owen Meredith; "A Bird at Sunset," Owen Meredith; "The Titlark's Nest," Owen Meredith; "The Dead Eagle," Campbell; "Ode to a Nightingale," John Keats; "What the Birds Said," John Greenleaf Whittier; "The Sandpiper," Celia Thaxter; "The Blackbird and the Rooks," Dinah Mulock Craik; "The Canary in his Cage," Dinah Mulock Craik; "The Falcon," James Russell Lowell; "The Titmouse," Ralph Waldo Emerson; "The Stormy Petrel," Barry Cornwall; "To the Skylark," Percy Bysshe Shelley; "The O'Lincoln Family," Wilson Flagg; "To a Waterfowl," William Cullen Bryant; "Robert of Lincoln," William Cullen Bryant; "The Return of the Birds," William Cullen Bryant, "The Eagle," Alfred Tennyson; "To the Eagle," James G. Percival; "The Forerunner," Harriet Prescott Spofford; "The Skylark," James Hogg; "To the Skylark," William Wordsworth; "Sir Robin," Lucy Larcom; "The Pewee," J. T. Trowbridge; "The Yellowbird," Celia Thaxter "The Dying Swan," Alfred Tennyson; "Story of a Blackbird," Alice Cary; "The Blue Jay," Mrs. A. D. T. Whitney; "The Song Sparrow," Mrs. A. D. T. Whitney; "The Catbird," Mrs. A. D. T. Whitney; "Sparrows," Mrs. A. D. T. Whitney; "The Ovenbird," Mrs. A. D. T. Whitney; "The Vireos," Mrs. A. D. T. Whitney; "The Ovenbird," Frank Bolles; "Whip-poor-will," Frank Bolles; "The Veery," Henry Van Dyke; "The Song Sparrow," Henry Van Dyke; "The Wings of a Dove," Henry Van Dyke; "The Whip-poor-will," Henry Van Dyke; "To the Cuckoo," William Wordsworth; "Secrets," Susan Coolidge; "The Falcon," James Russell Lowell; "The Mocking Bird," Sidney Lanier; "Forbearance," Ralph Waldo Emerson; "The Mocking Bird,"[55] Clinton Scollard; "The Mocking Bird," Maurice Thompson; "The Mocking Bird," R. H. Wilde; "The Mocking Bird," A. B. Meek; "The Mocking Bird," Albert Pike; "The Song of the Thrush," Edward Markham.
+
+This list can of course be indefinitely extended.
+
+IN CHURCH
+
+Just in front of my pew sits a maiden—
+A little brown wing on her hat,
+With its touches of tropical azure,
+And sheen of the sun upon that.
+Through the bloom-colored pane shines a glory
+By which the vast shadows are stirred,
+But I pine for the spirit and splendor
+That painted the wing of the bird.
+The organ rolls down its great anthem;
+With the soul of a song it is blent;
+But for me, I am sick for the singing
+Of one little song that is spent.
+The voice of the curate is gentle:
+"No sparrow shall fall to the ground;"
+But the poor broken wing on the bonnet
+Is mocking the merciful sound.
+—Anonymous.
+
+[56]
+
+IX
+OBJECTS AND RESULTS OF BIRD DAY
+The general observance of a "Bird Day" in our schools would probably do more to open thousands of young minds to the reception of bird lore than anything else that can be devised. The scattered interests of the children would thus be brought together, and fused into a large and compact enthusiasm, which would become the common property of all. Zeal in a genuine cause is more contagious than a bad habit.
+
+The first Bird Day in the schools was celebrated on the first Friday in May, 1894. This is as good a date as any for the sections not in the extreme North or South.
+
+It would better come a little after the birds begin to arrive. The afternoon session will be found sufficient to devote to the special exercises. The date should be announced some time beforehand, so that the children may prepare for it. They will not only prepare themselves, but will have the whole community aroused by the sharp points of their inquisitorial weapons. Exercises should be held in all grades, from the primary to the high school.
+
+We quote the following from circular No. 17 sent out by the United States Department of Agriculture:—
+
+OBJECT OF BIRD DAY
+
+From all sides come reports of a decrease in native birds, due to the clearing of the forests, draining of the swamps, and cultivation of lands, but especially to the increasing slaughter of birds for game, the demand for feathers to supply the millinery trade, and the breaking up of nests to gratify the egg-collecting proclivities of small boys. An attempt has been made to restrict these latter causes[57] by legislation. Nearly every State and Territory has passed game laws, and several States have statutes protecting insectivorous birds. Such laws are frequently changed and cannot be expected to accomplish much unless supported by popular sentiment in favor of bird protection. This object can only be attained by demonstrating to the people the value of birds, and how can it be accomplished better than through the medium of the schools?
+
+Briefly stated, the object of Bird Day is to diffuse knowledge concerning our native birds and to arouse a more general interest in bird protection. As such it should appeal not only to ornithologists, sportsmen, and farmers, who have a practical interest in the preservation of birds, but also to the general public, who would soon appreciate the loss if the common songsters were exterminated.
+
+It is time to give more intelligent attention to the birds and appreciate their value. Many schools already have courses in natural history or nature study, and such a day would add zest to the regular studies, encourage the pupils to observe carefully, and give them something to look forward to and work for. In the words of the originator of the day, "the general observance of a Bird Day in our schools would probably do more to open thousands of young minds to the reception of bird lore than anything else that can be devised." The first thing is to interest the scholars in birds in general and particularly in those of their own locality. Good lists of birds have been prepared for several of the States, and popular books and articles on ornithology are within the reach of every one. But the instruction should not be limited to books; the children should be encouraged to observe the birds in the field, to study their habits and migrations, their nests and food, and should be taught to respect the laws protecting game and song birds.
+
+VALUE OF BIRD DAY
+
+When the question of introducing Arbor Day into the schools was brought before the National Educational Association in February, 1884, the objection was made that the subject was out of place in the schools. The value of the innovation could not be appreciated by those who did not see the practical bearing of the subject on an ordinary school course. But at the next meeting of the Association the question was again brought up and unanimously adopted—to the mutual benefit of the schools and of practical forestry. With the advent of more progressive ideas concerning education there is a demand for instruction in subjects which a few years ago would have been considered out of place, or of no special value. If the main object of our educational system is to prepare boys and girls for the intelligent per[58]formance of the duties and labors of life, why should not some attention be given to the study of nature, particularly in rural schools where the farmers of the next generation are now being educated?
+
+The study of birds may be taken up in several ways and for different purposes; it may be made to furnish simply a course in mental training or to assist the pupil in acquiring habits of accurate observation; it may be taken up alone or combined with composition, drawing, geography, or literature. But it has also an economic side which may appeal to those who demand purely practical studies in schools. Economic ornithology has been defined as the "study of birds from the standpoint of dollars and cents." It treats of the direct relations of birds to man, showing which species are beneficial and which injurious, teaching the agriculturist how to protect his feathered friends and guard against the attacks of his foes. This is a subject in which we are only just beginning to acquire exact knowledge, but it is none the less deserving of a place in our educational system on this account. Its practical value is recognized both by individual States and by the National Government, which appropriate considerable sums of money for investigations of value to agriculture. Much good work has been done by some of the experiment stations and State boards of agriculture, particularly in Illinois, Indiana, Massachusetts, Michigan, Nebraska, and Pennsylvania. In the United States Department of Agriculture, the Division of Biological Survey (formerly the Division of Ornithology) devotes much attention to the collection of data respecting the geographic distribution, migration, and food of birds, and to the publication and diffusion of information concerning species which are beneficial or injurious to agriculture. Some of the results of these investigations are of general interest, and could be used in courses of instruction in even the lower schools. Such facts would thus reach a larger number of persons than is now possible, and would be made more generally available to those interested in them.
+
+If illustrations of the practical value of a knowledge of zoölogy are necessary they can easily be given. It has been estimated recently that the forests and streams of Maine are worth more than its agricultural resources. If this is so, is it not equally as important to teach the best means of preserving the timber, the game, and the fish, as it is to teach students how to develop the agricultural wealth of the State? In 1885 Pennsylvania passed its famous "scalp act," and in less than two years expended between $75,000 and $100,000 in an attempt to rid the State of animals and birds supposed to be injurious. A large part of the money was spent for killing hawks and owls, most of which belonged to species which were afterwards shown to be actually beneficial. Not only was money thrown away in a useless war against noxious animals, but the State actually paid for the destruction of birds of[59] inestimable value to its farmers. During the last five or six years two States have been engaged in an unsuccessful attempt to exterminate English sparrows by paying bounties for their heads. Michigan and Illinois have each spent more than $50,000; but, although millions of sparrows have been killed, the decrease in numbers is hardly perceptible. A more general knowledge of the habits of the English sparrow at the time the bird was first introduced into the United States would not only have saved this outlay of over $100,000, but would also have saved many other States from loss due to depredations by sparrows.
+
+Is it not worth while to do something to protect the birds and prevent their destruction before it is too late? A powerful influence for good can be exerted by the schools if the teachers will only interest themselves in the movement, and the benefit that will result to the pupils could hardly be attained in any other way at so small an expenditure of time. If it is deemed unwise to establish another holiday, or it may seem too much to devote one day in the year to the study of birds, the exercises of Bird Day might be combined with those of Arbor Day.
+
+It is believed that Bird Day can be adopted with profit by schools of all grades, and the subject is recommended to the thoughtful attention of teachers and school superintendents throughout the country, in the hope that they will coöperate with other agencies now at work to prevent the destruction of our native birds.
+
+T. S. Palmer,
+
+Acting Chief of Division.
+
+Approved:
+
+Chas. W. Dabney, Jr.,
+
+Washington, D. C., July 2, 1896.
+
+The results of Bird Day are noticeable in the schools in which it has been observed. The spirit of the schools has become fresher and brighter. There has been more marked improvement in the composition work and in the language of the pupils. Most of the children know the names of many of our birds and considerable of their ways of life, and wish to know more, and are their warm friends and protectors. The old relations between the small boy and the birds have been entirely changed. The birds themselves have been affected. They have become much more numerous. Many that were formerly rare visitants now nest freely in the shade trees of the city; for example, the orioles, the grosbeaks, the scarlet tanagers, and even the wood thrushes, and their nests are[60] about as safe as the other homes. The children say that the birds know about Bird Day, and have come to help it along.
+
+The correlation of the public library and the public schools is assured in those towns where Bird Day has been introduced. If there were no other result of this new day, the demand for healthful literature would be enough. The call for Burroughs and Bradford Torrey, Olive Thorne Miller, and the other writers of our out-of-doors literature is so great as to attract attention in the libraries. In fact, in one the writer knows well there is a constant and steady demand, particularly from the boys. Frank Bolles is a great favorite with them. The excursions to the woods have a new and æsthetic interest. What would Emerson have thought when he wrote that matchless bit—
+
+Hast thou named all the birds, without a gun?
+Loved the wood-rose and left it on its stalk?
+if he had known that the boys of another generation would be able to answer as he would have liked to have them!
+
+The effect upon teachers is not less marked. The trip to the woods in the early morning and at sunset, sometimes with the children and sometimes in parties by themselves, has resulted in physical and mental good. A new and charming relation has sprung up between teachers and children. The tie of community of interests is a strong one. A taste in common is always conducive to friendship.
+
+The surprising thing about this new departure in nature study is that once taken up it will never be abandoned. There is something fascinating in it. One may love trees and flowers, but their processes and habits of growth are in a way unrelated to us; but our "little brothers in feathers" are kin to us in their hopes and fears.
+
+"When I think," said a bright woman the other day, "that this summer I have learned to know by plumage and by song twenty birds, and when I realize the delight the knowledge has given me, I feel as if[61] I ought to go out as a missionary to the heathen women in my neighborhood." She did not exaggerate the feeling of every bird lover. So much is lost to life and good cheer by this ignorance.
+
+Now that the Bird Day idea is being taken up and spread by the United States Government in the interests of economy, it will do much to sweeten the lives of the coming generation. The natural impulse to love and watch the birds will be encouraged instead of being disregarded.
+
+Hast thou named all the birds, without a gun?
+Loved the wood-rose, and left it on its stalk?
+O, be my friend, and teach me to be thine!
+—Emerson.
+
+No longer now the winged inhabitants
+That in the woods their sweet lives sing away,
+Flee from the form of man, but gather round,
+And prune their feathers on the hands
+Which little children stretch in friendly sport
+Towards these dreadless partners of their play.
+—Extract from Shelley's Queen Mab.
+
+<!-- Blizzard End User License Agreement (https://www.blizzard.com/en-us/legal/fba4d00f-c7e4-4883-b8b9-1b4500a402ea/blizzard-end-user-license-agreement) -->
+
+You must be and hereby affirm that you are an adult of the legal age of majority in your country and state of residence. If you are under the legal age of majority, your parent or legal guardian must consent to this Agreement. By installing or using Blizzard’s online gaming platform, you represent that your parent or legal guardian consents to this Agreement.
+
+Thank you for your interest in Blizzard’s online gaming services and interactive games, and the interactive games from other developers (“Licensors”) who make their games available through the Battle.net gaming service (Blizzard’s and the Licensors’ games are collectively referred to herein as the “Games”). This Agreement sets forth the terms and conditions under which you are licensed to install and use the Platform, and it governs the other aspects of the relationship between you and Blizzard as set forth below. As used in this Agreement, the term “Platform” refers collectively, and at times individually, to (1) the Battle.net desktop app software, (2) the Battle.net gaming service, (3) each of the Games, (4) authorized mobile device applications relating to the Games and the Battle.net service, and (5) all features and components of each of them, whether installed or used on a computer, console, or mobile device. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, YOU ARE NOT PERMITTED TO INSTALL, COPY, OR USE THE BLIZZARD PLATFORM OR GAMES. IF YOU REJECT THE TERMS OF THIS AGREEMENT WITHIN FOURTEEN (14) DAYS AFTER YOUR PURCHASE OF A GAME FROM BLIZZARD, YOU MAY CONTACT BLIZZARD THROUGH https://us.battle.net/support/en TO INQUIRE ABOUT A FULL REFUND OF THE PURCHASE PRICE OF THAT GAME. IF YOU PURCHASED A GAME AT RETAIL, YOUR RIGHT TO RETURN THE GAME IS SUBJECT TO THE RETAILER’S RETURN POLICY.
+
+ 
+
+Your use of the Platform is licensed, not sold, to you, and you hereby acknowledge that no title or ownership with respect to the Platform or the Games is being transferred or assigned and this Agreement should not be construed as a sale of any rights. All access to and use of the Platform and the Games is subject to this Agreement, the applicable software documentation, and our Privacy Policy (accessible at https://www.blizzard.com/en-us/legal/) (collectively, the “Complete Terms”). The Complete Terms are hereby incorporated into this Agreement by reference (with this Agreement controlling any conflicting terms) and represent the complete agreement between you and us relating to use of the Platform, the Games, and related services and products, superseding any prior agreements between you and us, whether written or oral.
+
+ 
+
+Specific Terms Applicable to Items Purchased from Sony Interactive Entertainment America. Purchase and use of items are subject to the Network Terms of Service and User Agreement. This online service has been sublicensed to you by Sony Interactive Entertainment America.
+
+ 
+
+Except as otherwise provided below, if you reside in the United States, Canada, or Mexico, use of the Platform is licensed to you by Blizzard Entertainment, Inc., a Delaware corporation, 1 Blizzard Way, Irvine, CA 92618, and if you are not a resident of the United States, Canada, or Mexico, use of the Platform is licensed to you by Activision Blizzard UK Limited, having its registered office at The Ampersand Building, 178 Wardour Street, London, W1F 8FY, United Kingdom (Blizzard Entertainment, Inc., and Activision Blizzard UK Limited are referred to herein as “Blizzard”, “we,” or “us”).
+
+ 
+
+The Platform.
+The Battle.net Account. To use the Platform, you may be required to register, or have previously registered, a Battle.net Account (an “Account”). Certain Games may not require creation of an Account. Use of the Games, and creation and use of Accounts, are subject to the following terms and conditions:
+You may establish an Account only if: (i) you are a “natural person” and an adult in your country and state of residence (Corporations, Limited Liability Companies, partnerships and other legal or business entities may not establish an Account); and (ii) you are not an individual specifically prohibited by Blizzard from using the Platform.
+Children under 13 may not utilize an Account, the Platform, nor enter into this Agreement even with the consent of a parent or legal guardian. Account users 13 or older but under 18 or the age of majority where they live (a “Child”) must review this Agreement and the Privacy Policy together with your parent or guardian. If you are the parent or legal guardian of an Account user who is a Child, you also agree to be bound by this Agreement on the Child’s behalf. In the event that you permit your Child to use an Account or the Platform (including any Game), you hereby agree to this Agreement on behalf of yourself and your Child, and you understand and agree that you will be responsible for all uses of the Account or the Platform by your Child whether or not any particular use was authorized by you. Parents/guardians are jointly and severally liable for all acts and omissions of their Child for all uses of the Account and Platform.
+When you create or update an Account, you must:
+provide Blizzard with accurate and up to date information that is personal to you, such as your name, address, phone number, and email address. Additionally, in order to play certain Games or use certain features offered on the Platform, you may also be required to provide Blizzard with payment information (such as credit card information). Blizzard’s retention and/or use of your personal information is subject to Blizzard’s Privacy Policy, located here. Blizzard shall also have the right to obtain non personal data from your connection to the Platform; and
+select a unique username and password (collectively referred to hereunder as “Login Information”). You may not use your real name as the password for the Account, and you cannot share the Account or the Login Information with anyone, unless the terms of this Agreement allow it.
+To play Games, you may need to add a Game license to an Account, which may require an authentication code generated by Blizzard. For Game licenses purchased at retail, the authentication code will either be included in the packaging materials or sent to you via electronic means. If you purchase or download a Game digitally from Blizzard or via an authorized mobile app store (e.g., Apple or Google), the authentication code will be assigned to the Account when you purchase the Game.
+Please take a few moments to review Blizzard’s Account Security information here. You must maintain the confidentiality of the Login Information, as you are responsible for all uses of the Login Information and the Account, including purchases, whether or not authorized by you. If you become aware of or reasonably suspect any breach of security, including without limitation any loss, theft, or unauthorized disclosure of the Login Information, you must immediately notify Blizzard through https://us.battle.net/support/en/.
+Your use of the Platform to interact with Blizzard and other players is governed by Blizzard’s Code(s) of Conduct (the “Codes of Conduct”) and in-game policies (the “In-game Policies”). The Codes of Conduct and In-Game Policies are not meant to be exhaustive. The Codes of Conduct and In-Game Policies are incorporated into this Agreement by this reference, and are available on Blizzard’s Customer Support database, located here. Please note that violation of any of Blizzard’s Codes of Conduct (including with regard to Your use of Blizzard’s Websites and Forums) may result in penalties against your Battle.net Account, including suspension and/or termination of Game licenses.
+You agree to pay all fees and applicable taxes incurred by you or anyone using your Account. If you choose a recurring subscription for a Game, you acknowledge that payments will be processed automatically (e.g., debited from your Battle.net Balance or charged to your credit card) until you cancel the subscription or the Account. Blizzard may revise the pricing for the goods and services offered through the Platform at any time. YOU ACKNOWLEDGE THAT BLIZZARD IS NOT REQUIRED TO REFUND AMOUNTS YOU PAY TO BLIZZARD FOR USE OF THE PLATFORM, OR FOR DIGITAL PURCHASES MADE THROUGH THE PLATFORM, FOR ANY REASON, EXCEPT AS REQUIRED BY APPLICABLE LAW.
+Blizzard and its partners (such as marketing and analytics providers) shall have the right to monitor and/or record your communications when you use the Platform, and you acknowledge and agree that when you use the Platform, you have no expectation that your communications will be private. Blizzard shall have the right to disclose your communications for any reason, including: (a) to satisfy any applicable law, regulation, legal process or governmental request; (b) to enforce the terms of this Agreement or any other Blizzard policy; (c) to protect Blizzard’s legal rights and remedies; (d) to protect the health or safety of anyone that Blizzard believes may be threatened; or (e) to report a crime or other offensive behavior.
+Grant of License. If you accept and comply with the terms of this Agreement, Blizzard will grant, and you will receive, a limited, revocable, non-sub licensable, and non-exclusive license to use the Platform subject to the “License Limitations,” set forth in Section 1.C below, as follows:
+You may install applicable components or features of the Platform (including the Games) on one or more computers or mobile devices under your legitimate control.
+may use the Platform for your personal and non-commercial entertainment purposes only, unless specifically allowed under the terms of this Agreement.
+You may not transfer your rights and obligations to use the Platform.
+With regards to Games purchased from retailers on original media (e.g., on CD-ROM, DVD, etc.) you may permanently transfer all of your rights and obligations related to the use of a Game under this Agreement to another person who agrees to the terms of this Agreement by physically transferring the original media, original packaging, and all manuals or other documentation distributed with the Game provided that you permanently delete all copies and installations of the Game in your possession or control. You agree to be solely responsible for any taxes, fees, charges, duties, withholdings, assessments, and the like, together with any interest, penalties, and additions imposed in connection with such transfer. Other than as set forth above, Blizzard does not recognize any purported transfer of the Games.
+Some of the Games may be subject to specific license terms that may include the following:
+Trial or “Starter” versions of Games allow you to play a limited version of the Game before you will be required to purchase a Game license from Blizzard. Licenses to use the full version of these Games can be purchased through the Platform.
+In certain cases, the “full version,” of Games can only be played after you purchase and add a Game license to your Account.
+You may play the Game(s) you have licensed at authorized publicly-available cyber cafés or computer gaming centers on the Platform through an Account registered to you.
+Certain Games may be obtained through the Platform, but may not be playable on the Platform. In such an event, the Game will be provided with a separate End User License Agreement that will govern your installation and use of the Game post purchase.
+Games which are produced by Blizzard’s Licensors and distributed through, and/or played upon, the Platform will require that you agree to the Licensor’s End User License Agreement prior to your being able to play the Game on the Platform, and the terms and conditions of Licensor’s End User License Agreement are hereby incorporated into this Agreement by this reference. In the event of a conflict between the terms of this Agreement and a Licensor’s End User License Agreement pertaining to the use of the Licensor’s Game, the Licensor’s End User License Agreement shall supersede and govern your use of the Licensor’s Game. However, in the event of a conflict between the terms of this Agreement and the Licensor’s End User License Agreement pertaining to any other aspect of the Platform, this Agreement shall supersede and govern your use of the Platform.
+License Limitations. Blizzard may suspend or revoke your license to use the Platform, or parts, components and/or single features thereof, if you violate, or assist others in violating, the license limitations set forth below. You agree that you will not, in whole or in part or under any circumstances, do the following:
+Derivative Works: Copy or reproduce (except as provided in Section 1.B.), translate, reverse engineer, derive source code from, modify, disassemble, decompile, or create derivative works based on or related to the Platform.
+Cheating: Create, use, offer, promote, advertise, make available and/or distribute the following or assist therein:
+cheats; i.e. methods not expressly authorized by Blizzard (whether accomplished using hardware, software, a combination thereof, or otherwise), influencing and/or facilitating gameplay, including exploits of any in-game bugs, and thereby granting you and/or any other user an advantage over other players not using such methods;
+bots; i.e. any code and/or software, not expressly authorized by Blizzard, that allows the automated control of a Game, or any other feature of the Platform, e.g. the automated control of a character in a Game;
+hacks; i.e. accessing or modifying the software of the Platform in any manner not expressly authorized by Blizzard; and/or
+any code and/or software, not expressly authorized by Blizzard, that can be used in connection with the Platform and/or any component or feature thereof which changes and/or facilitates the gameplay or other functionality;
+Prohibited Commercial Uses: Exploit, in its entirety or individual components, the Platform for any purpose not expressly authorized by Blizzard, including, without limitation (i) playing the Game(s) at commercial establishments (subject to Section 1.B.v.3.); (ii) gathering in-game currency, items, or resources for sale outside of the Platform or the Game(s); (iii) performing in-game services including, without limitation, account boosting or power-leveling, in exchange for payment; (iv) communicating or facilitating (by text, live audio communications, or otherwise) any commercial advertisement, solicitation or offer through or within the Platform; or (v) organizing, promoting, facilitating, or participating in any event involving wagering on the outcome, or any other aspect of, Blizzard’s Games, whether or not such conduct constitutes gambling under the laws of any applicable jurisdiction, without authorization.
+“esports”: Use the Platform for any esports or group competition sponsored, promoted or facilitated by any commercial or non-profit entity without obtaining additional authorization from Blizzard or obtaining Blizzard’s prior written consent. For more information on obtaining appropriate authorization, please visit Blizzard’s website.
+Cloud Computing: Use the Platform, including a Game, in connection with any unauthorized third-party “cloud computing” services, “cloud gaming” services, or any software or service designed to enable the unauthorized streaming or transmission of Game content from a third-party server to any device.
+Data Mining: Use any unauthorized process or software that intercepts, collects, reads, or “mines” information generated or stored by the Platform; provided, however, that Blizzard may, at its sole and absolute discretion, allow the use of certain third-party user interfaces.
+Duplicated Items: Create, utilize or transact in any in-game item created or copied by exploiting a design flaw, undocumented problem, or program bug in the Platform.
+Matchmaking: Host, provide or develop matchmaking services for the Game(s), or intercept, emulate or redirect the communication protocols used by Blizzard in any way, for any purpose, including without limitation unauthorized play over the internet, network play (except as expressly authorized by Blizzard), or as part of content aggregation networks.
+Unauthorized Connections: Facilitate, create or maintain any unauthorized connection to the Platform including without limitation (i) any connection to any unauthorized server that emulates, or attempts to emulate, the Platform; and (ii) any connection using third-party programs or tools not expressly authorized by Blizzard.
+Transfers: Attempt to sell, sublicense, rent, lease, grant a security interest in or otherwise transfer any copy of the Platform or component thereof, or your rights to the Platform to any other party in any way not expressly authorized herein.
+Disruption / Harassment: Engage in any conduct intended to disrupt or diminish the game experience for other players, or disrupt operation of Blizzard’s Platform in any way, including:
+Disrupting or assisting in the disruption of any computer used to support the Platform or any Game environment. ANY ATTEMPT BY YOU TO DISRUPT THE PLATFORM OR UNDERMINE THE LEGITIMATE OPERATION OF ANY GAME MAY BE A VIOLATION OF CRIMINAL AND CIVIL LAWS.
+Harassment, “griefing,” abusive behavior or chat, conduct intended to unreasonably undermine or disrupt the Game experiences of others, deliberate inactivity or disconnecting, and/or any other activity which violates Blizzard’s Codes of Conduct or In-Game Policies.
+Violation of Laws: use the Platform to violate any applicable law or regulation.
+Platform and Game-Specific Features.
+Platform Features:
+Global Play. Certain Games feature “Global Play,” which allows you to play with players who are outside of the region associated with the Account that you have registered. The Global Play feature requires that some or all of your personal information provided to Blizzard when you registered the Account be transferred to servers operated by Blizzard in the regions where you wish to play the Game. By agreeing to participate in Global Play, you agree that Blizzard can transfer your data to Blizzard’s servers in each of the regions that you select to participate in using the Global Play feature. For more information, please review Blizzard’s Privacy Policy located here.
+Battle.net Balance.
+As an active Account holder, you may participate in the Battle.net Balance service (“Battle.net Balance”). Battle.net Balance can only be used to obtain certain products and services offered by Blizzard; it has no cash value. Blizzard grants you a limited license to acquire, use, and redeem Battle.net Balance pursuant to the terms of this Agreement. Regardless of how it is acquired, Battle.net Balance is non-transferable to another person or Account, does not accrue interest, is not insured by the Federal Deposit Insurance Corporation (FDIC), and, unless otherwise required by law or permitted by this Agreement, is not redeemable or refundable for any sum of money, monetary value, or anything of value, from Blizzard at any time. The Battle.net Balance does not have an equivalent value in real currency and does not act as a substitute for real currency. You acknowledge and agree that we may revise or take action that impacts the perceived value or purchase price of the Battle.net Balance at any time except as prohibited by applicable law. The Battle.net Balance may terminate in accordance with the terms and conditions of this Agreement, when we cease providing the Software, or this Agreement is otherwise terminated. Battle.net Balance does not constitute or confer upon you any personal property right. Battle.net Balance is not a bank account. And, while you can register and play on multiple Accounts, you are not allowed to have more than three (3) Accounts with Battle.net Balance.
+To purchase Battle.net Balance, go to the Battle.net Balance purchase page and follow the instructions provided to you on that page. You may choose to purchase Battle.net Balance in different currencies (e.g., US Dollars, Mexican Pesos, Chilean Pesos, and/or Argentinean Pesos) in order to redeem your Battle.net Balance for certain products or services offered on the Platform. It may take up to five (5) days before purchases of Battle.net Balance are made available for your use. Certain minimums may apply to purchases of Battle.net Balance, and the maximum balance of your Battle.net Balance at any time is limited to the equivalent of $350.00 USD, and the maximum value of all transactions using Battle.net Balance is limited to $2,000.00 USD per day. The balance of your Battle.net Balance shall be determined by converting the Battle.net Balance across all of the various currencies in your Battle.net Balance on all Accounts registered to you to the equivalent of US Dollars using the currency conversion formulas posted on the WSJ Market Data Center. Blizzard reserves the right to change the maximum and minimum amounts applicable to Battle.net Balances at any time in accordance with Section 9.B. of this Agreement. Transactions to purchase Battle.net Balance, or redeem Battle.net Balance for certain goods and services from Blizzard, are governed by the terms of this Agreement and the Blizzard Terms of Sale, which can be viewed here. Purchases of Battle.net Balance are non-refundable, unless otherwise required by law. IN ORDER TO HAVE A Battle.net BALANCE OF MORE THAN $110.00 USD, YOU MUST ATTACH A BATTLE.NET AUTHENTICATOR TO YOUR ACCOUNT. You can download the Battle.net Authenticator for mobile devices here.
+Blizzard will not send you a statement of itemized transactions for your Battle.net Balance. In order to check the balance of your Battle.net Balance or review your recent Battle.net Balance transactions, visit the Account Management page for your Account. You are solely responsible for verifying that the proper amount of Battle.net Balance has been added to or deducted from your Battle.net Balance.
+Sales tax may apply to your redemption of Battle.net Balance for products or services purchased through the Platform in some jurisdictions. The amount of tax charged depends upon many factors, including the type of product or service purchased.
+Blizzard reserves the right to reduce, liquidate, deactivate, suspend or terminate your Battle.net Balance, or other Platform features if Blizzard determines, in its sole discretion, after investigation, that you have violated this Agreement, including the license limitations set forth in Section 1.C., misused Battle.net Balance, or have otherwise used Battle.net Balance to conduct any fraudulent or illegal activity.
+You are responsible for all uses of your Battle.net Balance. If you suspect that your Battle.net Balance has been compromised, you should contact Blizzard Customer Service through https://us.battle.net/support/en/ so that the matter can be investigated. Blizzard, in its sole discretion, may require additional information and/or documentation to verify your claim, and once Blizzard has the information that Blizzard deems necessary to verify your claim, Blizzard will take actions to freeze your Account until Blizzard has returned control of your Account to you. Regardless of any actions Blizzard may take on your behalf, you acknowledge and agree that Blizzard has sole and absolute discretion in determining whether or not your claim is valid and, if so, the appropriate remedy.
+Advertising. The Platform may incorporate third-party technology that enables advertising on the Platform and/or in certain Games playable on the Platform, which may be downloaded temporarily to your personal computer and replaced during online game play. As part of this process, Blizzard and/or its authorized third party advertisers may collect standard information that is sent when your personal computer connects to the Internet including your Internet protocol (IP) address.
+User Created or Uploaded Content. The Platform may provide you an opportunity to upload and display content on the Platform, such as on the Blizzard forums, and/or as part of a Game, including the compilation, arrangement or display of such content (collectively, the “User Content”). User Content specifically does not include a Custom Game, as defined in Section 1.D.ii.1. below. You hereby grant Blizzard a perpetual, irrevocable, worldwide, fully paid up, non-exclusive, sub-licensable, right and license to exploit the User Content and all elements thereof, in any and all media, formats and forms, known now or hereafter devised. Blizzard shall have the unlimited right to copy, reproduce, fix, modify, adapt, translate, reformat, prepare derivatives, add to and delete from, rearrange and transpose, manufacture, publish, distribute, sell, license, sublicense, transfer, rent, lease, transmit, publicly display, publicly perform, provide access to, broadcast, and practice the User Content as well as all modified and derivative works thereof and any and all elements contained therein, and use or incorporate a portion or portions of the User Content or the elements thereof in conjunction with or into any other material. In the event you upload or otherwise transmit to Blizzard any concepts, ideas, or feedback relating to the Platform, you shall not be entitled to any compensation for any such submission, unless expressly agreed between you and Blizzard, and Blizzard may freely use any such submission in any manner it deems appropriate. Any such submission by you shall not create any contractual relationship between you and Blizzard. Except to the extent that any such waiver is prohibited by law, you hereby waive the benefit of any provision of law known as "moral rights" or "droit moral" or any similar law in any country of the world. You represent and warrant that the User Content does not infringe upon the copyright, trademark, patent, trade secret or other intellectual property rights of any third party. You further represent and warrant that you will not use or contribute User Content that is unlawful, tortious, defamatory, obscene, invasive of the privacy of another person, threatening, harassing, abusive, hateful, racist or otherwise objectionable or inappropriate. Blizzard may remove any User Content and any related content or elements from the Platform at its sole discretion.
+Real ID Feature and Identity Disclosure. The Platform allows you to disclose your identity to other users of the Platform through the “Real ID Friends” feature. If you use the Real ID feature and opt-in to a request to be “Real ID Friends” with another user, that user will be able to see your real name and online status. IF YOU OPT-IN TO THE REAL ID FEATURE, THOSE PEOPLE YOU DESIGNATE AS A “REAL ID FRIEND” WILL BE ABLE TO SEE THE NAMES OF YOUR OTHER “REAL ID FRIENDS,” AND YOUR NAME AND ONLINE STATUS WILL BE VISIBLE BY THOSE PEOPLE THAT YOUR “REAL ID FRIENDS” HAVE DESIGNATED USING THE SAME FEATURE. You may opt out of the Real ID feature at any time by deleting all Real ID Friends from your Account.
+Game Features.
+Game Editors. Certain Games include editing software (hereafter referred as “Game Editor(s)”) that will allow you to create custom games, levels, maps, scenarios or other content (“Custom Games”). For purposes of this Agreement and any agreements referenced herein, “Custom Games” includes all content created using the Game Editor(s), including but not limited to all digital files associated with such Custom Games, as well as (1) all content contained within such files, including but not limited to player and non-player characters, audio and video elements, environments, objects, items, skins, and textures, (2) all titles, trademarks, trade names, character names, or other names and phrases associated with or included within the Custom Game, and (3) any other intellectual property rights contained within the Custom Game, including any and all content, game concepts, methods or ideas. A Custom Game may only be used with the Game’s engine that is associated with a particular Game Editor. The manner in which Custom Games can be used or exploited is set forth in the Custom Game Acceptable Use Policy, the terms of which are incorporated into this Agreement by this reference. Without limiting the applicability of the Custom Game Acceptable Use Policy or any part thereof, you understand and agree that Custom Games are and shall remain the sole and exclusive property of Blizzard. Without limiting the foregoing, you hereby assign to Blizzard all of your rights, title and interest in and to all Custom Games, and agree that should Blizzard decide that it is necessary, you agree to execute future assignments promptly upon receiving such a request from Blizzard. Blizzard may modify, remove, disable, or delete Custom Games at any time in its sole and absolute discretion.
+Community Tournaments. In order to support local esports tournament activities, Blizzard provides a license program for organizers of community tournaments under its Community Competition License.
+Beta Testing Pre-Release Versions of Games. Certain pre-release versions of Games may be made available to you through the Platform for testing (“Beta Test”). Your participation in a Beta Test through the Platform will be governed by the following:
+Eligibility. In order to participate in a Beta Test, you must meet the following requirements:
+Blizzard must designate you to participate in a Beta Test (a “Beta Tester”);
+The Account that you will use to participate in the Beta Test must be in good standing;
+If the Beta Test is to test an expansion to a Game, then the Account must be upgraded with all previous expansions to that particular Game;
+You agree to allow Blizzard to obtain hardware and software information from the computer system that you will use to take part in the Beta Test (the “Beta Test System”) prior to registration for the Beta Test in order for Blizzard to determine if you are eligible to participate in the Beta Test; and
+The Beta Test System must meet the specifications which Blizzard determines are required for the Beta Test.
+Confidentiality. If Blizzard announces that a Beta Test is confidential, the Beta Test invitation you will receive will include a notice that states that the Beta Test is confidential. During a confidential Beta Test, the existence of the Beta Test and all elements thereof is to be kept confidential, and you agree to keep everything related to the Beta Test secret from everyone who is not participating in the Beta Test until Blizzard informs you that the Beta Test is no longer confidential. For purposes of example and not limitation, you agree that you will not disclose the following during a confidential Beta Test:
+Information about the Beta Test, such as your role as a Beta Tester, the length of the Beta Test, the number of Beta Testers, how you became a Beta Tester, etc.
+Information related to the Game that you are Beta Testing, such as the Game’s look and feel, playable races, classes, combat, magic, communication, grouping, questing, monetary systems, non-player character interaction, items, armor, weapons, stability of the Game, etc.
+Beta Tests and Real Money Features. Certain Games may have features that will allow you to purchase licenses to use digital items or services through the Game’s interface. If you purchase a license to use a digital item or service through the Game’s interface during a Beta Test, all purchases are subject to the Terms of Sale. For Beta Tests on mobile devices, the terms of sale from the applicable mobile app store (e.g., Google Play Store, Apple AppStore, etc.) will apply for purchases made via those stores. Blizzard will not provide you with a refund for your purchase of a digital item or service, and in some cases, items or services purchased during a Beta Test may not transition to the retail release version of a Game. In those cases, Blizzard will provide you with information that explains what, if any, credit you would receive for your purchase of digital goods or services for real money during a Beta Test once the Beta Test has concluded.
+Feedback. During and after the Beta Test, you may be provided with an opportunity to give Blizzard your comments, suggestions and impressions of the Game by using tools to supply feedback and bug reports, internal websites and forums, and other methods. The Game may also include a tool that will allow your computer system to forward system and driver information to Blizzard in the event of a crash. This tool will collect data from your computer system related to the crash, and allow you to forward a report to Blizzard via electronic mail.
+Acknowledgments. You acknowledge that:
+the Game being Beta Tested is a work in progress and may contain bugs which may cause loss of data and/or damage to your computer system;
+you have, or will, back-up your hard drive prior to installation of the Beta;
+you have the resources necessary to easily reinstall the Beta Test System’s operating system and restore any and all data that may be lost;
+Blizzard is not liable in any way for the loss of data or damage to the Beta Test System, interruptions of service, software or hardware failures, or loss of data or disruption of service;
+Blizzard may monitor and record any and all communications, electronic or otherwise, pertaining to the Beta including, without limitation, packets, in-game chat, forum postings, etc.;
+Blizzard may delete or modify the information stored by the Platform or the Game being Beta Tested for any reason at any time during the duration of the Beta Test;
+Blizzard may transfer software program files to the Beta Test System, including a program that will collect and send Blizzard CPU, RAM, operating system, video card, and sound card information from the Beta Test System; and
+You may not sell, transfer or commercially exploit access to a Beta, including the distribution of Beta keys without Blizzard’s express authorization.
+Termination. Blizzard can terminate a Beta Test at any time. When Blizzard terminates a Beta Test, you must delete the pre-release version of the Game that was the subject of the Beta Test and all documents and materials you received from Blizzard in connection with the Beta Test, and you may be asked by Blizzard to remove any elements of the Beta from any hard drives on which the pre-release version of the Game that was the subject of the Beta Test has been installed. You agree and acknowledge that Blizzard’s termination of the Beta Test shall not be grounds for any refunds of any kind, including, but not limited to, digital items, refunds for time purchased to access World of Warcraft, etc.
+Sections of the Agreement Applicable to Beta Tests. When participating in a Beta Test, the terms of this Section 1.D.ii.3. shall supersede and govern over any other Section of this Agreement which may be in conflict with the terms of this Section 1.D.ii.3. Additionally, Section 1.B.iv., and 1.B.v.3. of the Agreement are specifically excluded from the use of a Beta.
+ 
+
+Blizzard’s Ownership
+With the sole exception of the Licensors’ Games, Blizzard is the owner or licensee of all right, title, and interest in and to the Platform, including the Games that are produced and developed by Blizzard (“Blizzard Games”), Custom Games derived from a Blizzard Game, Accounts, and all of the features and components thereof. The Platform may contain materials licensed by third-parties to Blizzard, and these third-parties may enforce their ownership rights against you in the event that you violate this Agreement. The following components of the Platform (which do not include content or components of the Licensors’ Games), are owned or licensed by Blizzard:
+All virtual content appearing within the Platform, including the Blizzard Games, such as:
+Visual Components: Locations, artwork, structural or landscape designs, animations, and audio-visual effects;
+Narrations: Themes, concepts, stories, and storylines;
+Characters: The names, likenesses, inventories, and catch phrases of Game characters;
+Items: Virtual goods, such as digital cards, currency, potions, weapons, armor, wearable items, skins, sprays, pets, mounts, etc.;
+All data and communications generated by, or occurring through, the Platform;
+All sounds, musical compositions, recordings, and sound effects originating in the Platform;
+All recordings, Game replays, or reenactments of in-game matches, battles, duels, etc.;
+Computer code, including but not limited to “Applets” and source code;
+Titles, methods of operation, software, related documentation, and all other original works of authorship contained in the Platform;
+All Accounts, including the name of the Account and any Battle Tags associated with an Account. All use of an Account shall inure to Blizzard’s benefit. Blizzard does not recognize the transfer of Accounts. You may not purchase, sell, gift or trade any Account, or offer to purchase, sell, gift, or trade any Account, and any such attempt shall be null and void and may result in the forfeiture of the Account;
+All Moral Rights that relate to the Platform, including Custom Games derived from a Blizzard Game, such as the right of attribution, and the right to the integrity of certain original works of authorship; and
+The right to create derivative works, and as part of this Agreement, you agree that you will not create any work based on the Platform, except as expressly set forth in this Agreement or otherwise by Blizzard in certain contest rules, Blizzard’s Fan Policies, or addenda to this Agreement.
+ 
+
+Pre-Loaded Software The Platform may contain additional software that requires you to agree to additional terms prior to your use thereof (“Additional Software”). A. Installation. You agree that Blizzard may install Additional Software on your hard drive as part of the installation of the Platform, and from time to time during the term of this Agreement. B. Use. Unless Blizzard grants you a valid license and alphanumeric key to use and activate the Additional Software, you may not access, use, distribute, copy, display, reverse engineer, derive source code from, modify, disassemble, decompile or create derivative works based on the Additional Software. In the event that Blizzard grants to you a valid license and alphanumeric key to use and activate the Additional Software, all use of the Additional Software shall be subject to the terms of this Agreement. C. Copies. You may make one (1) copy of the Additional Software for archival purposes only.
+ 
+
+Consent to Monitor. WHILE RUNNING, THE PLATFORM (INCLUDING A GAME) MAY MONITOR YOUR COMPUTER, CONSOLE, OR MOBILE DEVICE'S MEMORY FOR UNAUTHORIZED THIRD PARTY PROGRAMS RUNNING EITHER CONCURRENTLY WITH A GAME OR OUT OF PROCESS. AN "UNAUTHORIZED THIRD PARTY PROGRAM" AS USED HEREIN SHALL BE DEFINED AS ANY THIRD PARTY SOFTWARE PROHIBITED BY SECTION 1.C. ABOVE. IN THE EVENT THAT THE PLATFORM DETECTS AN UNAUTHORIZED THIRD PARTY PROGRAM, (a) THE PLATFORM MAY COMMUNICATE INFORMATION BACK TO BLIZZARD, INCLUDING WITHOUT LIMITATION YOUR ACCOUNT NAME, DETAILS ABOUT THE UNAUTHORIZED THIRD PARTY PROGRAM DETECTED, AND THE TIME AND DATE; AND/OR (b) BLIZZARD MAY EXERCISE ANY OR ALL OF ITS RIGHTS UNDER THIS AGREEMENT, WITH OR WITHOUT PRIOR NOTICE TO THE USER. Additionally, certain Games include a tool that will allow your computer system to forward information to Blizzard in the event that the Game crashes, including system and driver data, and by agreeing hereto you consent to Blizzard receiving and/or using this data.
+ 
+
+Limited Warranty. TO THE FULLEST EXTENT ALLOWED BY APPLICABLE LAW, THE PLATFORM, ACCOUNTS, AND THE GAME(S) ARE PROVIDED ON AN “AS IS” AND “AS AVAILABLE,” BASIS FOR USE, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF CONDITION, UNINTERRUPTED OR ERROR-FREE USE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT, TITLE, AND THOSE ARISING FROM COURSE OF DEALING OR USAGE OF TRADE, and the entire risk arising out of use or performance of the Platform and the Game(s) remains with the user. Notwithstanding the foregoing, Blizzard warrants up to and including ninety (90) days from the date of your purchase of a license to the Game, that the physical media on which the Game was distributed, if any, shall be free from defects in material and workmanship. In the event that such media proves to be defective during that time period, and upon presentation to Blizzard of proof of purchase of the defective media, Blizzard will at its option: (a) correct any defect, (b) provide you with a similar product of similar value, or (c) refund your money. TO THE FULLEST EXTENT ALLOWED BY APPLICABLE LAW, THE FOREGOING IS YOUR SOLE AND EXCLUSIVE REMEDY FOR THE EXPRESS WARRANTY SET FORTH IN THIS SECTION.
+ 
+
+If you are a resident of Australia, the benefits provided to you by this Limited Warranty are in addition to other rights or remedies you may have under local laws related to the goods to which the warranty applies. Our goods come with guarantees that cannot be excluded under the Australian Consumer Law. You are entitled to a replacement or refund for a major failure and compensation for any other reasonably foreseeable loss or damage. You are also entitled to have the goods repaired or replaced if the goods fail to be of acceptable quality and the failure does not amount to a major failure. The provisions of this clause containing the Limited Warranty and the clause containing the Limitation of Liability and Indemnity below apply only to the extent permitted by the Competition and Consumer Act 2010 (Cth). The entitlement to a replacement or a refund for a major failure is not subject to Blizzard’s option. To submit a warranty claim to Blizzard, please call 1800 041 378 or send to PO Box 544, Pyrmont NSW 2009 Australia. The user is responsible for the costs of returning media to Blizzard.
+
+ 
+
+Limitations of Liability. To the fullest extent allowed by applicable law, Blizzard, its parent, subsidiaries, Licensors and affiliates shall not be liable for any loss or damage arising out of your use of, or inability to access or use, the Platform or Account(s). Blizzard’s liability shall never exceed the total fees paid by you to Blizzard during the six (6) months prior to your making a claim against Blizzard, unless applicable law explicitly disallows this limitation, in which case Blizzard’s liability shall be limited to the fullest extent permitted by applicable law.
+ 
+
+Indemnity. You hereby agree to defend and indemnify Blizzard, its parent, subsidiaries, Licensors and affiliates against and from any third party claims, liabilities, losses, injuries, damages, costs or expenses incurred by Blizzard arising out of or from any violation by you of this Agreement or your misuse of the Platform or Account(s), or of any specific services or features associated therewith, including but not limited to User Content, Custom Games, Game Editors, Battle.net Balance, and this Agreement.
+ 
+
+Equitable Remedies. You agree that Blizzard would be irreparably damaged if the terms of this Agreement were not specifically followed and enforced. In such an event, you agree that Blizzard shall be entitled, without bond or other security, or proof of damages, to appropriate equitable relief in the event you breach this Agreement; and that the awarding of equitable relief to Blizzard will not limit its ability to receive remedies that are otherwise available to Blizzard under applicable laws.
+ 
+
+Alterations.
+Alterations to the Agreement.
+Blizzard’s Rights. Blizzard may create updated versions of this Agreement (each a “New Agreement”) as its business and the law evolve.
+New Agreements. This Agreement will terminate immediately upon the introduction of a New Agreement. New Agreements will not be applied retroactively and cannot alter the process for resolving a Dispute between us once you have notified Blizzard of a Dispute. If you do not wish to be bound by a New Agreement, you must immediately cease using, and uninstall, the Platform and all Games. Your continued use of your Account, the Platform, and/or the Games after Blizzard has published a New Agreement constitutes acceptance by you of the New Agreement.
+Alterations to the Platform and Availability. Blizzard may change, modify, suspend, or discontinue any aspect of the Platform, Games, or Accounts at any time, including removing items, or revising the effectiveness of items in an effort to balance a Game. Blizzard may also impose limits on certain features or restrict your access to parts or all of the Platform, Games, or Accounts without notice or liability. Except as otherwise set forth herein, Blizzard does not guarantee that any particular Platform, Game, or Account, or any particular features or components thereof, will be available at all times, at any given time, or in all countries and/or geographic locations, or that Blizzard will continue to offer the Platform, Game, or Account, or all features or components thereof, for any particular length of time. Availability is subject to change at any time, although we will endeavor to use reasonable commercial efforts to provide you prior notice, unless the discontinuance arises from a matter that is beyond Blizzard’s control or causes the provision of such advance notice not to be possible or feasible.
+ 
+
+Term and Termination.
+Term. This Agreement is effective upon your creation of an Account, and shall remain in effect until it is terminated or superseded by a New Agreement, or, if neither of the foregoing events occur, as long as you continue using the Platform. In the event that Blizzard chooses to cease providing the Platform, or license to a third party the right to provide the Platform, Blizzard shall use reasonable commercial efforts to provide you prior notice, unless the discontinuance arises from a matter that is beyond Blizzard’s control or causes the provision of such advance notice not to be possible or feasible. Neither the Platform nor Blizzard’s agreement to provide access to the Platform shall be considered a rental or lease of time on the capacity of Blizzard's servers or other technology.
+Termination
+You may terminate this Agreement at any time by notifying Blizzard by email through https://us.battle.net/support/en/ and by uninstalling the Platform and the Games, but the Dispute Resolution provisions of this Agreement will survive termination and apply to all Disputes that arose or could have been initiated prior to termination.
+Blizzard reserves the right to terminate this Agreement at any time for any reason, or for no reason, with or without notice to you. For purposes of explanation and not limitation, most Account suspensions and terminations are the result of violations of this Agreement. In case of minor violations of these rules, Blizzard may provide you with a prior warning and/or suspend your use of the Account due to your non-compliance prior to terminating the Agreement or modifying or deleting an Account.
+In the event of a termination of this Agreement, any right you may have had to any pre-purchased Game access or virtual goods, such as digital cards, currency, weapons, armor, wearable items, skins, sprays, pets, mounts, etc., are forfeit, and you agree and acknowledge that you are not entitled to any refund for any amounts which were pre-paid on your Account prior to any termination of this Agreement. In addition, you will not be able to use the Platform. The Dispute Resolution provisions of this Agreement will survive termination and apply to all Disputes that arose or could have been initiated prior to termination.
+ 
+
+Dispute Resolution. PLEASE READ THIS SECTION CAREFULLY. IT MAY SIGNIFICANTLY AFFECT YOUR RIGHTS, INCLUDING YOUR RIGHT TO FILE A LAWSUIT IN COURT OR TO PURSUE CLAIMS IN A CLASS OR REPRESENTATIVE CAPACITY.
+
+APPLICABILITY OF THIS DISPUTE RESOLUTION POLICY. This binding individual arbitration section will not apply to the extent prohibited by the laws of your country of residence. In the United States, this Agreement is governed by the Federal Arbitration Act and federal arbitration law. To the fullest extent allowed by applicable law, you and Blizzard agree to submit all Disputes between us to individual, binding arbitration under the provisions in this Section 11. A “Dispute” means any dispute, claim, or controversy (except those specifically exempted below) between you and Blizzard that in any way relates to or arises from any aspect of our relationship, including, without limitation, your use or attempted use of the Platform, the Games, and all marketing related to them, your Account, your Battle.net Balance, any licensed content, and all matters relating to or arising from this Agreement, Blizzard’s Privacy Policy, or any other agreement between you and Blizzard, including the validity and enforceability of this agreement to arbitrate. A Dispute shall be subject to binding, individual arbitration regardless of whether it is based in contract, statute, regulation, ordinance, tort (including fraud, misrepresentation, fraudulent inducement, or negligence), or any other legal or equitable theory. This includes claims that accrued before you entered into this Agreement. You understand that there is no judge or jury in arbitration and that court review of an arbitration award is limited.
+INFORMAL NEGOTIATION PERIOD. Blizzard’s customer support department is available at https://us.battle.net/support/en/ to address any concerns you may have regarding the Platform, your Account, or the Games. Most concerns are quickly resolved in this manner to our customers' satisfaction. In an effort to accelerate resolution and reduce the cost of any Dispute between us, you and Blizzard agree to first attempt to negotiate any Dispute informally for at least thirty (30) days before either party initiates any arbitration or court proceeding (the “Initial Dispute Resolution Period”). That period begins upon receipt of written notice from the party raising the Dispute. If Blizzard has a Dispute with you, it will send notice of that Dispute to your billing address and/or email address you have provided to us. If you have a Dispute with Blizzard, you must notify us in writing at the following email address: legal@blizzard.com, using the subject line “Initial Dispute Resolution Notice.” Your notice of Dispute must be individual to you and must include, as applicable, your name, the email address associated with your Battle.net Account, and your residential address. The notice of Dispute also must describe the Dispute, explain the facts of the Dispute as you understand them, and tell Blizzard what you want us to do to resolve the problem. The parties shall use their best efforts to settle any Dispute directly through consultation and good faith negotiations, and you agree that a notice of Dispute containing all of the information required above, followed by at least 30 days of good faith negotiation, are preconditions to either party initiating a lawsuit or arbitration. A notice of Dispute will not be valid, will not start the Initial Dispute Resolution Period, and will not allow you or Blizzard later to initiate a lawsuit or arbitration, unless it contains all of the information required by this paragraph. If either of us commences an arbitration without having previously provided a valid and compliant notice of Dispute, you and Blizzard agree that the applicable arbitration provider (or the arbitrator, if one has been appointed) must suspend the arbitration until the party that initiated it complies with the Initial Dispute Resolution Period. You and Blizzard authorize the arbitration provider or the arbitrator to decide summarily whether the party that commenced an arbitration complied with the Initial Dispute Resolution Period requirement, relying solely on this Agreement and the notice of Dispute (if any) that you or Blizzard provided before commencing arbitration.
+BINDING ARBITRATION. If a Dispute cannot be resolved through negotiations during the Initial Dispute Resolution Period, then either you or Blizzard may elect to have the Dispute finally and exclusively resolved by binding arbitration, unless an exception applies as stated below.
+ 
+
+Except in the event of a Mass Arbitration (as defined below), the arbitration will be administered by JAMS in accordance with the JAMS Streamlined Arbitration Rules and Procedures (the “JAMS Rules”) effective as of the date of the Notice of Dispute, which are available at the JAMS website, http://www.jamsadr.com/rules-streamlined-arbitration, as modified by this Agreement. If, for any reason, JAMS is unable to provide the arbitration, then except as otherwise stated below, you may file your Dispute with any national arbitration company that handles consumer arbitrations following procedures that are substantially similar to the JAMS Rules.
+
+ 
+
+Arbitration hearings may be conducted by videoconference unless the arbitrator believes an in-person hearing is necessary. In such instances, the location of an arbitration hearing will be decided pursuant to the JAMS Rules. For residents outside the United States, arbitration shall be initiated in Orange County, California, and you and Blizzard agree to submit to the personal jurisdiction of any federal or state court in Orange County, California, in order to compel arbitration, to stay proceedings pending arbitration, or to confirm, modify, vacate, or enter judgment on the award entered by the arbitrator.
+
+ 
+
+The arbitrator will make a decision in writing but need not provide a statement of reasons unless requested by a party. The arbitrator must follow applicable law. The decision of the arbitrator shall be final and binding on you and Blizzard, and any award of the arbitrator may be entered in any court of competent jurisdiction.
+
+ 
+
+The arbitrator shall determine the scope and enforceability of this arbitration agreement, including whether a Dispute is subject to arbitration. The arbitrator has authority to decide all issues of validity, enforceability or arbitrability, including, but not limited to, where a party raises as a defense to arbitration that the claims in question are exempted from the arbitration requirement or that any portion of this agreement is not enforceable.
+
+ 
+
+If a lawsuit filed in court includes claims or requests for relief that are arbitrable and claims or requests for relief that are not, you and Blizzard agree that any non-arbitrable claims or requests for relief shall be stayed pending the completion of the arbitration of the arbitrable claims or requests for relief.
+
+ 
+
+CLASS AND COLLECTIVE ACTION WAIVER. TO THE FULLEST EXTENT ALLOWED BY APPLICABLE LAW, YOU AND BLIZZARD AGREE THAT EACH PARTY MAY BRING DISPUTES AGAINST THE OTHER PARTY ONLY IN AN INDIVIDUAL CAPACITY, AND NOT AS A CLASS ACTION, COLLECTIVE ACTION OR CLASS ARBITRATION, OR AS A PRIVATE ATTORNEY GENERAL. To the extent applicable law does not permit waiver of private attorney general claims, but permits them to be arbitrated, then such claims shall be resolved in arbitration. The arbitrator shall be empowered to grant whatever relief would be available in a court under law or in equity.
+ 
+
+If any provision in Section 11 of this Agreement is found to be unenforceable, that provision shall be severed with the remainder of Section 11 of this Agreement remaining in full force and effect. The foregoing severance provision shall not apply to the prohibition against class or collective actions. This means that if the prohibition against class or collective actions is found to be unenforceable for any reason, the entire Section 11 of this Agreement (but only Section 11) shall be null and void.
+
+ 
+
+EXCEPTIONS TO INFORMAL NEGOTIATIONS AND ARBITRATION. Notwithstanding the parties' decision to resolve all disputes through arbitration, either party may bring an action in state or federal court that only asserts claims for patent infringement or invalidity, copyright infringement, piracy, moral rights violations, trademark infringement, and/or trade secret misappropriation. This exclusion does not include claims related to the license granted to you for the Platform under this Agreement. Excluded claims are subject to the jurisdiction and applicable law provisions in Section 11(H) below.
+ 
+
+Either party may also seek relief in a small claims court for any individual disputes or claims within the scope of that court's jurisdiction. If an arbitration is filed, before the arbitrator is formally appointed, either party can send written notice to the opposing party and the applicable arbitration provider that it wants the case decided by a small claims court, after which the arbitration provider may close the case.
+
+ 
+
+EXCEPTION – MASS ARBITRATION BEFORE FEDARB: Notwithstanding the parties’ decision to have arbitrations administered by JAMS, if 20 or more demands for arbitration are filed relating to the same or similar subject matter and sharing common issues of law or fact, and counsel for the parties submitting the demands are the same or coordinated, you and we agree that this will constitute a “Mass Arbitration.” If a Mass Arbitration is commenced, you and we agree that it shall not be governed by JAMS Rules or administered by JAMS. Instead, a Mass Arbitration shall be administered by FedArb, a nationally recognized arbitration provider, and governed by the FedArb Rules in effect when the Mass Arbitration is filed, excluding any rules that permit arbitration on a class-wide basis (the “FedArb Rules”), and under the rules set forth in this Agreement. The FedArb Rules are available at https://www.fedarb.com/ or by calling 1-650-328-9500. You and we agree that the Mass Arbitration shall be resolved using FedArb’s Framework for Mass Arbitration Proceedings ADR-MDL, available at https://www.fedarb.com/. Before any Mass Arbitration is filed with FedArb, you and we agree to contact FedArb jointly to advise that the parties intend to use FedArb’s Framework for Mass Arbitration Proceedings ADR-MDL. The individual demands comprising the Mass Arbitration shall be submitted on FedArb’s claim form(s) and as directed by FedArb. You and Blizzard agree that if either party fails or refuses to commence the Mass Arbitration before FedArb rather than JAMS, you or Blizzard may seek an order from JAMS compelling compliance and directing administration of the Mass Arbitration before FedArb. Pending resolution of any such requests, you and we agree that all arbitrations comprising the Mass Arbitration (and any obligation to pay arbitration fees) shall be stayed. If for any reason the provisions in this Section 11(F) are found to be unenforceable, or if for any reason FedArb declines to administer the Mass Arbitration, then the Disputes comprising the Mass Arbitration shall be administered by JAMS consistent with the provisions of Section 11 of this Agreement.
+ 
+
+30 DAY RIGHT TO OPT OUT: You have the right to opt-out and not be bound by the arbitration agreement and class action waiver provisions in this Section 11 by sending written notice of your decision to opt-out to the following email address: legal@blizzard.com, using the subject line “Arbitration Opt-Out.” The notice must be sent within 30 days of the date on which you first access or use the Platform and agree to these terms; otherwise you shall be bound to arbitrate disputes in accordance with the terms of this Section 11. If you opt-out of these arbitration provisions, Blizzard also will not be bound by them.
+ 
+
+CHOICE OF LAW; VENUE FOR NON-ARBITRABLE DISPUTES. Unless this Agreement includes express language to the contrary, all Disputes shall be governed by and construed under the laws of the United States of America and the laws of the State of Delaware, without regard to choice of law principles. The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. If you reside in the United States, for any claims not subject to binding individual arbitration, and which cannot be brought in small claims court in the county in which you reside as set forth above, you and Blizzard agree to submit to the exclusive jurisdiction of the state and federal courts in Orange County, California, and you and Blizzard consent to venue in and personal jurisdiction before such courts (but without prejudicing either party’s rights to remove a case to federal court if permissible). This paragraph will be interpreted as broadly as applicable law permits. If you are a (1) Canadian resident who has (2) purchased a license to a Game in Canada, other laws may apply if you choose not to agree to arbitrate as set forth above. Such laws shall affect this Agreement only to the extent required by such jurisdiction. If such laws apply, the terms and conditions of this Agreement shall be given their maximum effect. Users who access the Platform from outside of the United States and Canada, are responsible for compliance with all applicable local laws. Claims excluded from arbitration are subject to the choice of law and forum selection clauses set forth in this Agreement.
+ 
+
+General.
+
+You understand and agree that the Platform may not be used, accessed, downloaded, or otherwise exported, reexported, or transferred in contravention of applicable export control, economic sanctions, and import laws and regulations, including, but not limited to, the U.S. Export Administration Regulations (“EAR”) and regulations promulgated by the U.S. Department of the Treasury’s Office of Foreign Assets Control (“OFAC”). You represent and warrant that you (1) are not subject to U.S. sanctions or export restrictions and otherwise are eligible to utilize the Platform under applicable laws and regulations; (2) are not located or ordinarily resident in a country or region subject to comprehensive or near-comprehensive U.S. sanctions/embargo, unless your use of the Platform in such country or region is authorized by U.S. law; (3) are not an official, employee, agent, or contractor of, or directly or indirectly acting or purporting to act for or on behalf of, a government (including any political subdivision, agency, or instrumentality thereof or any person directly or indirectly owned or controlled by the foregoing) or political party (e.g., Cuban Communist Party, Workers’ Party of Korea) subject to U.S. sanctions/embargo or any other entity in a sanctioned/embargoed country or region or subject to U.S. sanctions/embargo; and (4) will not use the Platform in connection with an end-use prohibited by U.S. law.
+Blizzard may assign this Agreement, in whole or in part, to any person or entity at any time with or without your consent. You may not assign this Agreement without Blizzard’s prior written consent. Your assignment of this Agreement without Blizzard’s prior written consent shall be void.
+Blizzard’s failure to enforce a provision of this Agreement shall not be construed as a (i) waiver of such provision, or (ii) diminishment of any right to enforce such provisions. Further, Blizzard may choose to waive enforcement of a provision of this Agreement in a particular instance; however, you are still obligated to comply with that waived provision in the future.
+Notices.
+If to Blizzard.
+If you are a resident of the United States, Canada, or Mexico, except as expressly set forth to the contrary herein, all notices given by you under this Agreement shall be in writing and addressed to: Blizzard Entertainment, Inc., 1 Blizzard Way, Irvine, CA 92618, Attn: Law Department.
+If you are not a resident of the United States, Canada or Mexico, then except as expressly set forth to the contrary herein, all notices given by you under this Agreement shall be in writing and addressed to: Activision Blizzard UK Limited, having its registered office at The Ampersand Building, 178 Wardour Street, London, W1F 8FY, United Kingdom, Attn: Law Department.
+If to You. Except as expressly set forth to the contrary herein, all notices given by Blizzard under this Agreement shall be given to you either through written notice, email, or website blog post.
+Blizzard shall not be liable for any delay or failure to perform resulting from causes outside the reasonable control of Blizzard, such as natural disasters, unforeseen intrusions into our cyberspace, war, terrorism, riots, embargoes, acts of civil or military authorities, acts of God, fire, floods, accidents, strikes, or shortages of transportation facilities, fuel, energy, labor or materials.
+Except as expressly set forth to the contrary herein, if any part of this Agreement is determined to be invalid or unenforceable, then that portion shall be severed, and the remainder of this Agreement shall be given full force and effect.
+This Agreement, along with Blizzard’s other applicable agreements located on Blizzard’s Legal Documentation page, constitutes and contains the entire agreement between the parties with respect to the subject matter hereof and supersedes any prior oral or written agreements.
+The provisions of Sections 2, 5, 6, 7, 8, 11, and 12 shall survive termination of this Agreement for any reason. END
+</div>
+
     <script src="sketch.js"></script>
 </body>
 </html> 
